@@ -1,0 +1,24 @@
+The simulink files present a working prototype of OFDM.
+The file "Tranceiver.slx" is a simulation of OFDM with timing offsets, frequency offsets and multipath channels.
+
+The file "Ofdm_Parameters.mat" must be loaded to workspace before starting simulation. "Ofdm_Parameters.mat"
+contains a structure "qpsktxrxOFDM" which contains all the parameters of the OFDM simulations. The sBit in
+"qpsktxrxOFDM" are tha data bits that are sent through transmitter in a circular loop.
+
+The channel can be varied with the "channel1" block in simulation. The channel impulse response, snr and frequency
+Offset induced by channels can be varied for differnt channel requirements.
+
+The figure that pops up during simulation shows the crosscorrelation of the long preambles. The files "FrameCheck" 
+and "RxData" appears in workspace at the end of simulation. "RxData" are the received bits at the receiver and 
+"FrameCheck" shows the OFDM packets which are in error. If "FrameCheck" is 0 for a packet, then the specific packet
+is not in error.
+
+The files "Transmitter.slx" and "Receiver.slx" can be used for over the air experiments using USRPs. The "Trasmitter.slx"
+needs to be run for a specific time to generate data. The data is saved to "final_TXData" in workspace. This data is then
+transmitted to the receiver through USRPs and saved at the receiver. The "Receiver.slx" file performs offline decoding of the
+received data. The received data should be saved to "corupt" before running "Receiver.slx" file. 
+NOTE: It is necessary to load "Ofdm_Parameters.mat" to workspace before running "Trasmitter.slx" or "Receiver.slx" file.
+
+************************* USRP INTEGRATION  ********************************
+The USRP® Support from Communications System Toolbox available at MATLAB website <http://www.mathworks.com/hardware-support/usrp.html>
+contains methods which serve as the interface between MATLAB and the USRP hardware. These methods control various parameters such as centre frequency, sampling rate, gains etc of USRPs. Both simulink blocks and code provided by the package can be used for the interface between Matlab and hardware. We used the code to interface the two.

@@ -1,0 +1,26 @@
+The simulink files present a working prototype of P2P wireless communication for M-QAM constellation.
+This is a modified form of QPSK simulation available in "commqpsktxrx".
+
+The major contribution of this file is data aided AGC.The particular parameters and buffer sizes included
+are designed for a 16-QAM transmission. In order to utilize any other QAM constellation these sizes and
+parameters have to be adopted. The data-aided AGC can work with any chosen constellation as long as the 
+reference values are chosen appropriately. The synchronization alogortihms for frequency, phase and timing
+are derived from the above mentioned MATLAB model and small changes have been made to extend them from
+4-QAM to M-QAM. 
+
+The file "qpsktxrx16.mat" must be loaded to workspace before starting simulation. "qpsktxrx16.mat"
+contains a structure "qpsktxrx" which contains all the parameters of the simulations. The sBit in
+"qpsktxrx" are tha data bits that are sent through transmitter in a circular loop.
+
+The channel can be varied with the "channel model" block in simulation. The channel impulse response (single tap),
+snr and frequency Offset induced by channels can be varied for differnt channel requirements.
+
+The figure that pops up during simulation shows the received symbols after matched filter, after frequency 
+correction and the corrected symbols at the receiver."RxData" appears in workspace at the end of simulation.
+"RxData" are the received bits at the receiver.
+
+The transmitter and receiver blocks can be separated for over the air experiments with USRP. 
+
+************************* USRP INTEGRATION  ********************************
+The USRP® Support from Communications System Toolbox available at MATLAB website <http://www.mathworks.com/hardware-support/usrp.html>
+contains methods which serve as the interface between MATLAB and the USRP hardware. These methods control various parameters such as centre frequency, sampling rate, gains etc of USRPs. Both simulink blocks and code provided by the package can be used for the interface between Matlab and hardware. We used the code to interface the two.
