@@ -1,0 +1,51 @@
+CC     = "C:\Program Files\MATLAB\R2020a\sys\lcc64\lcc64\bin\lcc64.exe"
+LD     = "C:\Program Files\MATLAB\R2020a\sys\lcc64\lcc64\bin\lcclnk64.exe"
+LIBCMD = "C:\Program Files\MATLAB\R2020a\sys\lcc64\lcc64\bin\lcclib64.exe"
+CFLAGS = -dll -noregistrylookup  -c -Zp8 -DLCC_WIN64 -DMATLAB_MEX_FILE -nodeclspec  
+LDFLAGS = -s -dll -L"C:\Program Files\MATLAB\R2020a\sys\lcc64\lcc64\lib64" -entry LibMain -map sfun.map 
+LIBFLAGS = 
+
+OBJECTS = \
+	"c_mexapi_version.obj"\
+	"lccstub.obj"\
+	"sdruqpskrx_BPSK_cgxe.obj"\
+	"m_KTMVWZ2HExLqnZ2FNJOdrC.obj"\
+	"m_UxOvoSHoDqYMTVOX24wWpF.obj"\
+	"m_1HhAkxmSPWHD9TGYKVFeaD.obj"\
+	"m_WWp8y15qiWHT0yMoxQngXF.obj"\
+	"sdruqpskrx_BPSK_cgxe_registry.obj"\
+	"sdruqpskrx_BPSK_cgxe.def"\
+	"C:\Program Files\MATLAB\R2020a\extern\lib\win64\microsoft\libmx.lib"\
+	"C:\Program Files\MATLAB\R2020a\extern\lib\win64\microsoft\libmex.lib"\
+	"C:\Program Files\MATLAB\R2020a\extern\lib\win64\microsoft\libmat.lib"\
+	"C:\Program Files\MATLAB\R2020a\extern\lib\win64\microsoft\libfixedpoint.lib"\
+	"C:\Program Files\MATLAB\R2020a\extern\lib\win64\microsoft\libut.lib"\
+	"C:\Program Files\MATLAB\R2020a\extern\lib\win64\microsoft\libmwmathutil.lib"\
+	"C:\Program Files\MATLAB\R2020a\extern\lib\win64\microsoft\libemlrt.lib"\
+	"C:\Program Files\MATLAB\R2020a\extern\lib\win64\microsoft\libmwcgxert.lib"\
+	"C:\Program Files\MATLAB\R2020a\extern\lib\win64\microsoft\libmwslexec_simbridge.lib"\
+	"C:\Program Files\MATLAB\R2020a\lib\win64\libmwipp.lib"\
+	"C:\Program Files\MATLAB\R2020a\extern\lib\win64\microsoft\libcovrt.lib"\
+	"C:\Program Files\MATLAB\R2020a\extern\lib\win64\microsoft\libmwsl_sfcn_cov_bridge.lib"\
+
+INCLUDE_PATH= -I"C:\Program Files\MATLAB\R2020a\extern\include"  -I"C:\Program Files\MATLAB\R2020a\simulink\include"  -I"C:\Program Files\MATLAB\R2020a\rtw\c\src"  -I"E:\nasa files\bpsk usrp\slprj\_cgxe\sdruqpskrx_bpsk\src"  -I"E:\nasa files\bpsk usrp"  -I"E:\NASA Files\BPSK USRP\slprj\_cprj"  -I"C:\Program Files\MATLAB\R2020a\sys\lcc64\lcc64\include64"  -I"E:\NASA Files\BPSK USRP\slprj\_cgxe\sdruqpskrx_BPSK\src"  -I"E:\NASA Files\BPSK USRP" 
+ 
+
+sdruqpskrx_BPSK_cgxe.mexw64 : $(MAKEFILE) $(OBJECTS)
+	$(LD) $(LDFLAGS) -o sdruqpskrx_BPSK_cgxe.mexw64 @sdruqpskrx_BPSK_cgxe.lmko
+c_mexapi_version.obj :	"C:\Program Files\MATLAB\R2020a\extern\version\c_mexapi_version.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "C:\Program Files\MATLAB\R2020a\extern\version\c_mexapi_version.c"
+lccstub.obj :	"C:\Program Files\MATLAB\R2020a\sys\lcc64\lcc64\mex\lccstub.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "C:\Program Files\MATLAB\R2020a\sys\lcc64\lcc64\mex\lccstub.c"
+sdruqpskrx_BPSK_cgxe.obj :	"sdruqpskrx_BPSK_cgxe.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "sdruqpskrx_BPSK_cgxe.c"
+m_KTMVWZ2HExLqnZ2FNJOdrC.obj :	"m_KTMVWZ2HExLqnZ2FNJOdrC.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "m_KTMVWZ2HExLqnZ2FNJOdrC.c"
+m_UxOvoSHoDqYMTVOX24wWpF.obj :	"m_UxOvoSHoDqYMTVOX24wWpF.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "m_UxOvoSHoDqYMTVOX24wWpF.c"
+m_1HhAkxmSPWHD9TGYKVFeaD.obj :	"m_1HhAkxmSPWHD9TGYKVFeaD.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "m_1HhAkxmSPWHD9TGYKVFeaD.c"
+m_WWp8y15qiWHT0yMoxQngXF.obj :	"m_WWp8y15qiWHT0yMoxQngXF.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "m_WWp8y15qiWHT0yMoxQngXF.c"
+sdruqpskrx_BPSK_cgxe_registry.obj :	"sdruqpskrx_BPSK_cgxe_registry.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "sdruqpskrx_BPSK_cgxe_registry.c"

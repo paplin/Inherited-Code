@@ -1,0 +1,4 @@
+LIBRARY sdruqpskrx_BPSK_cgxe.mexw64
+EXPORTS
+mexFunction
+mexfilerequiredapiversion
