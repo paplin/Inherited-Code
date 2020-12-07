@@ -9,10 +9,10 @@ OBJECTS = \
 	"c_mexapi_version.obj"\
 	"lccstub.obj"\
 	"sdruqpskrx_OriginalQPSK_cgxe.obj"\
-	"m_4DoyfzVWrL7ZTU2c84qGl.obj"\
-	"m_9wL5t4Wqkf4qe0Xm8Vg82C.obj"\
-	"m_8rrCCyrtiOptd4UQNBcUyG.obj"\
-	"m_gNp5vVXUljDcfIAvnPLG7F.obj"\
+	"m_UxOvoSHoDqYMTVOX24wWpF.obj"\
+	"m_1HhAkxmSPWHD9TGYKVFeaD.obj"\
+	"m_WWp8y15qiWHT0yMoxQngXF.obj"\
+	"m_eXXzoE6PEnLYV4PxmR72iF.obj"\
 	"sdruqpskrx_OriginalQPSK_cgxe_registry.obj"\
 	"sdruqpskrx_OriginalQPSK_cgxe.def"\
 	"C:\Program Files\MATLAB\R2020a\extern\lib\win64\microsoft\libmx.lib"\
@@ -28,7 +28,7 @@ OBJECTS = \
 	"C:\Program Files\MATLAB\R2020a\extern\lib\win64\microsoft\libcovrt.lib"\
 	"C:\Program Files\MATLAB\R2020a\extern\lib\win64\microsoft\libmwsl_sfcn_cov_bridge.lib"\
 
-INCLUDE_PATH= -I"C:\Program Files\MATLAB\R2020a\extern\include"  -I"C:\Program Files\MATLAB\R2020a\simulink\include"  -I"C:\Program Files\MATLAB\R2020a\rtw\c\src"  -I"E:\nasa files\bpsk usrp\slprj\_cgxe\sdruqpskrx_originalqpsk\src"  -I"E:\nasa files\bpsk usrp"  -I"E:\NASA Files\BPSK USRP\slprj\_cprj"  -I"C:\Program Files\MATLAB\R2020a\sys\lcc64\lcc64\include64"  -I"E:\NASA Files\BPSK USRP\slprj\_cgxe\sdruqpskrx_OriginalQPSK\src"  -I"E:\NASA Files\BPSK USRP" 
+INCLUDE_PATH= -I"C:\Program Files\MATLAB\R2020a\extern\include"  -I"C:\Program Files\MATLAB\R2020a\simulink\include"  -I"C:\Program Files\MATLAB\R2020a\rtw\c\src"  -I"E:\nasa files\bpsk usrp\slprj\_cgxe\sdruqpskrx_originalqpsk\src"  -I"E:\nasa files\bpsk usrp"  -I"E:\nasa files\working usrp qpsk code"  -I"E:\NASA Files\BPSK USRP\slprj\_cprj"  -I"C:\Program Files\MATLAB\R2020a\sys\lcc64\lcc64\include64"  -I"E:\NASA Files\BPSK USRP\slprj\_cgxe\sdruqpskrx_OriginalQPSK\src"  -I"E:\NASA Files\BPSK USRP" 
  
 
 sdruqpskrx_OriginalQPSK_cgxe.mexw64 : $(MAKEFILE) $(OBJECTS)
@@ -39,13 +39,13 @@ lccstub.obj :	"C:\Program Files\MATLAB\R2020a\sys\lcc64\lcc64\mex\lccstub.c"
 	$(CC) $(CFLAGS) $(INCLUDE_PATH) "C:\Program Files\MATLAB\R2020a\sys\lcc64\lcc64\mex\lccstub.c"
 sdruqpskrx_OriginalQPSK_cgxe.obj :	"sdruqpskrx_OriginalQPSK_cgxe.c"
 	$(CC) $(CFLAGS) $(INCLUDE_PATH) "sdruqpskrx_OriginalQPSK_cgxe.c"
-m_4DoyfzVWrL7ZTU2c84qGl.obj :	"m_4DoyfzVWrL7ZTU2c84qGl.c"
-	$(CC) $(CFLAGS) $(INCLUDE_PATH) "m_4DoyfzVWrL7ZTU2c84qGl.c"
-m_9wL5t4Wqkf4qe0Xm8Vg82C.obj :	"m_9wL5t4Wqkf4qe0Xm8Vg82C.c"
-	$(CC) $(CFLAGS) $(INCLUDE_PATH) "m_9wL5t4Wqkf4qe0Xm8Vg82C.c"
-m_8rrCCyrtiOptd4UQNBcUyG.obj :	"m_8rrCCyrtiOptd4UQNBcUyG.c"
-	$(CC) $(CFLAGS) $(INCLUDE_PATH) "m_8rrCCyrtiOptd4UQNBcUyG.c"
-m_gNp5vVXUljDcfIAvnPLG7F.obj :	"m_gNp5vVXUljDcfIAvnPLG7F.c"
-	$(CC) $(CFLAGS) $(INCLUDE_PATH) "m_gNp5vVXUljDcfIAvnPLG7F.c"
+m_UxOvoSHoDqYMTVOX24wWpF.obj :	"m_UxOvoSHoDqYMTVOX24wWpF.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "m_UxOvoSHoDqYMTVOX24wWpF.c"
+m_1HhAkxmSPWHD9TGYKVFeaD.obj :	"m_1HhAkxmSPWHD9TGYKVFeaD.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "m_1HhAkxmSPWHD9TGYKVFeaD.c"
+m_WWp8y15qiWHT0yMoxQngXF.obj :	"m_WWp8y15qiWHT0yMoxQngXF.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "m_WWp8y15qiWHT0yMoxQngXF.c"
+m_eXXzoE6PEnLYV4PxmR72iF.obj :	"m_eXXzoE6PEnLYV4PxmR72iF.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "m_eXXzoE6PEnLYV4PxmR72iF.c"
 sdruqpskrx_OriginalQPSK_cgxe_registry.obj :	"sdruqpskrx_OriginalQPSK_cgxe_registry.c"
 	$(CC) $(CFLAGS) $(INCLUDE_PATH) "sdruqpskrx_OriginalQPSK_cgxe_registry.c"

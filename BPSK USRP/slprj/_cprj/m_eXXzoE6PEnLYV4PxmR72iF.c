@@ -1,7 +1,7 @@
 /* Include files */
 
 #include "modelInterface.h"
-#include "m_8rrCCyrtiOptd4UQNBcUyG.h"
+#include "m_eXXzoE6PEnLYV4PxmR72iF.h"
 #include <string.h>
 #include "mwmathutil.h"
 
@@ -183,7 +183,7 @@ static emlrtECInfo emlrtECI = { 1,     /* nDims */
 
 static emlrtBCInfo emlrtBCI = { -1,    /* iFirst */
   -1,                                  /* iLast */
-  355,                                 /* lineNo */
+  333,                                 /* lineNo */
   13,                                  /* colNo */
   "",                                  /* aName */
   "CarrierSynchronizer",               /* fName */
@@ -193,7 +193,7 @@ static emlrtBCInfo emlrtBCI = { -1,    /* iFirst */
 
 static emlrtBCInfo b_emlrtBCI = { -1,  /* iFirst */
   -1,                                  /* iLast */
-  368,                                 /* lineNo */
+  346,                                 /* lineNo */
   13,                                  /* colNo */
   "",                                  /* aName */
   "CarrierSynchronizer",               /* fName */
@@ -203,7 +203,7 @@ static emlrtBCInfo b_emlrtBCI = { -1,  /* iFirst */
 
 static emlrtBCInfo c_emlrtBCI = { -1,  /* iFirst */
   -1,                                  /* iLast */
-  369,                                 /* lineNo */
+  347,                                 /* lineNo */
   30,                                  /* colNo */
   "",                                  /* aName */
   "CarrierSynchronizer",               /* fName */
@@ -213,7 +213,7 @@ static emlrtBCInfo c_emlrtBCI = { -1,  /* iFirst */
 
 static emlrtBCInfo d_emlrtBCI = { -1,  /* iFirst */
   -1,                                  /* iLast */
-  355,                                 /* lineNo */
+  333,                                 /* lineNo */
   25,                                  /* colNo */
   "",                                  /* aName */
   "CarrierSynchronizer",               /* fName */
@@ -257,20 +257,20 @@ static emlrtRSInfo fb_emlrtRSI = { 22, /* lineNo */
 };
 
 /* Function Declarations */
-static void cgxe_mdl_start(InstanceStruct_8rrCCyrtiOptd4UQNBcUyG *moduleInstance);
-static void cgxe_mdl_initialize(InstanceStruct_8rrCCyrtiOptd4UQNBcUyG
+static void cgxe_mdl_start(InstanceStruct_eXXzoE6PEnLYV4PxmR72iF *moduleInstance);
+static void cgxe_mdl_initialize(InstanceStruct_eXXzoE6PEnLYV4PxmR72iF
   *moduleInstance);
-static void cgxe_mdl_outputs(InstanceStruct_8rrCCyrtiOptd4UQNBcUyG
+static void cgxe_mdl_outputs(InstanceStruct_eXXzoE6PEnLYV4PxmR72iF
   *moduleInstance);
-static void cgxe_mdl_update(InstanceStruct_8rrCCyrtiOptd4UQNBcUyG
+static void cgxe_mdl_update(InstanceStruct_eXXzoE6PEnLYV4PxmR72iF
   *moduleInstance);
-static void cgxe_mdl_enable(InstanceStruct_8rrCCyrtiOptd4UQNBcUyG
+static void cgxe_mdl_enable(InstanceStruct_eXXzoE6PEnLYV4PxmR72iF
   *moduleInstance);
-static void cgxe_mdl_disable(InstanceStruct_8rrCCyrtiOptd4UQNBcUyG
+static void cgxe_mdl_disable(InstanceStruct_eXXzoE6PEnLYV4PxmR72iF
   *moduleInstance);
-static void cgxe_mdl_terminate(InstanceStruct_8rrCCyrtiOptd4UQNBcUyG
+static void cgxe_mdl_terminate(InstanceStruct_eXXzoE6PEnLYV4PxmR72iF
   *moduleInstance);
-static void mw__internal__call__setup(InstanceStruct_8rrCCyrtiOptd4UQNBcUyG
+static void mw__internal__call__setup(InstanceStruct_eXXzoE6PEnLYV4PxmR72iF
   *moduleInstance, const emlrtStack *sp, real_T SamplesPerSymbol, real_T
   DampingFactor, real_T NormalizedLoopBandwidth, emxArray_creal_T *u0);
 static comm_CarrierSynchronizer *CarrierSynchronizer_CarrierSynchronizer
@@ -284,24 +284,24 @@ static void SystemCore_setup(const emlrtStack *sp, comm_CarrierSynchronizer *obj
   emxArray_creal_T *varargin_1);
 static void SystemCore_checkTunablePropChange(const emlrtStack *sp,
   comm_CarrierSynchronizer *obj);
-static void mw__internal__call__reset(InstanceStruct_8rrCCyrtiOptd4UQNBcUyG
+static void mw__internal__call__reset(InstanceStruct_eXXzoE6PEnLYV4PxmR72iF
   *moduleInstance, const emlrtStack *sp, real_T SamplesPerSymbol, real_T
   DampingFactor, real_T NormalizedLoopBandwidth);
-static void mw__internal__call__step(InstanceStruct_8rrCCyrtiOptd4UQNBcUyG
+static void mw__internal__call__step(InstanceStruct_eXXzoE6PEnLYV4PxmR72iF
   *moduleInstance, const emlrtStack *sp, real_T SamplesPerSymbol, real_T
   DampingFactor, real_T NormalizedLoopBandwidth, emxArray_creal_T *u0,
   emxArray_creal_T *b_y0);
-static void mw__internal__system___fcn(InstanceStruct_8rrCCyrtiOptd4UQNBcUyG
+static void mw__internal__system___fcn(InstanceStruct_eXXzoE6PEnLYV4PxmR72iF
   *moduleInstance, const emlrtStack *sp, real_T varargin_3, real_T varargin_4,
   real_T varargin_5, emxArray_creal_T *varargin_7, emxArray_creal_T *varargout_1);
 static void CarrierSynchronizer_stepImpl(const emlrtStack *sp,
   comm_CarrierSynchronizer *obj, emxArray_creal_T *input, emxArray_creal_T
   *output);
-static const mxArray *emlrt_marshallOut(InstanceStruct_8rrCCyrtiOptd4UQNBcUyG
+static const mxArray *emlrt_marshallOut(InstanceStruct_eXXzoE6PEnLYV4PxmR72iF
   *moduleInstance, const emlrtStack *sp);
 static const mxArray *cgxe_mdl_get_sim_state
-  (InstanceStruct_8rrCCyrtiOptd4UQNBcUyG *moduleInstance);
-static void emlrt_marshallIn(InstanceStruct_8rrCCyrtiOptd4UQNBcUyG
+  (InstanceStruct_eXXzoE6PEnLYV4PxmR72iF *moduleInstance);
+static void emlrt_marshallIn(InstanceStruct_eXXzoE6PEnLYV4PxmR72iF
   *moduleInstance, const emlrtStack *sp, const mxArray *u);
 static void b_emlrt_marshallIn(const emlrtStack *sp, const mxArray *b_v, const
   char_T *identifier, int32_T y[2]);
@@ -327,7 +327,7 @@ static creal_T l_emlrt_marshallIn(const emlrtStack *sp, const mxArray *u, const
   emlrtMsgIdentifier *parentId);
 static boolean_T m_emlrt_marshallIn(const emlrtStack *sp, const mxArray
   *b_sysobj_not_empty, const char_T *identifier);
-static void cgxe_mdl_set_sim_state(InstanceStruct_8rrCCyrtiOptd4UQNBcUyG
+static void cgxe_mdl_set_sim_state(InstanceStruct_eXXzoE6PEnLYV4PxmR72iF
   *moduleInstance, const mxArray *st);
 static const mxArray *message(const emlrtStack *sp, const mxArray *b, const
   mxArray *c, emlrtMCInfo *location);
@@ -361,11 +361,11 @@ static void emxFree_creal_T(emxArray_creal_T **pEmxArray);
 static void emxInit_creal_T1(emxArray_creal_T **pEmxArray, int32_T numDimensions);
 static void emxEnsureCapacity_creal_T1(emxArray_creal_T *emxArray, int32_T
   oldNumel);
-static void init_simulink_io_address(InstanceStruct_8rrCCyrtiOptd4UQNBcUyG
+static void init_simulink_io_address(InstanceStruct_eXXzoE6PEnLYV4PxmR72iF
   *moduleInstance);
 
 /* Function Definitions */
-static void cgxe_mdl_start(InstanceStruct_8rrCCyrtiOptd4UQNBcUyG *moduleInstance)
+static void cgxe_mdl_start(InstanceStruct_eXXzoE6PEnLYV4PxmR72iF *moduleInstance)
 {
   emlrtStack st = { NULL,              /* site */
     NULL,                              /* tls */
@@ -403,7 +403,7 @@ static void cgxe_mdl_start(InstanceStruct_8rrCCyrtiOptd4UQNBcUyG *moduleInstance
   emxFree_creal_T(&u_tmp3);
 }
 
-static void cgxe_mdl_initialize(InstanceStruct_8rrCCyrtiOptd4UQNBcUyG
+static void cgxe_mdl_initialize(InstanceStruct_eXXzoE6PEnLYV4PxmR72iF
   *moduleInstance)
 {
   emlrtStack st = { NULL,              /* site */
@@ -427,7 +427,7 @@ static void cgxe_mdl_initialize(InstanceStruct_8rrCCyrtiOptd4UQNBcUyG
   cgxertRestoreGcb(moduleInstance->S, -1, -1);
 }
 
-static void cgxe_mdl_outputs(InstanceStruct_8rrCCyrtiOptd4UQNBcUyG
+static void cgxe_mdl_outputs(InstanceStruct_eXXzoE6PEnLYV4PxmR72iF
   *moduleInstance)
 {
   emlrtStack st = { NULL,              /* site */
@@ -478,32 +478,32 @@ static void cgxe_mdl_outputs(InstanceStruct_8rrCCyrtiOptd4UQNBcUyG
   cgxertRestoreGcb(moduleInstance->S, -1, -1);
 }
 
-static void cgxe_mdl_update(InstanceStruct_8rrCCyrtiOptd4UQNBcUyG
+static void cgxe_mdl_update(InstanceStruct_eXXzoE6PEnLYV4PxmR72iF
   *moduleInstance)
 {
   (void)moduleInstance;
 }
 
-static void cgxe_mdl_enable(InstanceStruct_8rrCCyrtiOptd4UQNBcUyG
+static void cgxe_mdl_enable(InstanceStruct_eXXzoE6PEnLYV4PxmR72iF
   *moduleInstance)
 {
   (void)moduleInstance;
 }
 
-static void cgxe_mdl_disable(InstanceStruct_8rrCCyrtiOptd4UQNBcUyG
+static void cgxe_mdl_disable(InstanceStruct_eXXzoE6PEnLYV4PxmR72iF
   *moduleInstance)
 {
   (void)moduleInstance;
 }
 
-static void cgxe_mdl_terminate(InstanceStruct_8rrCCyrtiOptd4UQNBcUyG
+static void cgxe_mdl_terminate(InstanceStruct_eXXzoE6PEnLYV4PxmR72iF
   *moduleInstance)
 {
   cgxertSetGcb(moduleInstance->S, -1, -1);
   cgxertRestoreGcb(moduleInstance->S, -1, -1);
 }
 
-static void mw__internal__call__setup(InstanceStruct_8rrCCyrtiOptd4UQNBcUyG
+static void mw__internal__call__setup(InstanceStruct_eXXzoE6PEnLYV4PxmR72iF
   *moduleInstance, const emlrtStack *sp, real_T SamplesPerSymbol, real_T
   DampingFactor, real_T NormalizedLoopBandwidth, emxArray_creal_T *u0)
 {
@@ -1404,9 +1404,9 @@ static void SystemCore_setup(const emlrtStack *sp, comm_CarrierSynchronizer *obj
   d = (2.0 * obj->DampingFactor * PhaseRecoveryLoopBandwidth + 1.0) +
     PhaseRecoveryLoopBandwidth * PhaseRecoveryLoopBandwidth;
   obj->pProportionalGain = 4.0 * obj->DampingFactor * PhaseRecoveryLoopBandwidth
-    / d / PhaseRecoveryGain;
+    / d / (2.0 * PhaseRecoveryGain);
   obj->pIntegratorGain = 4.0 * PhaseRecoveryLoopBandwidth *
-    PhaseRecoveryLoopBandwidth / d / PhaseRecoveryGain;
+    PhaseRecoveryLoopBandwidth / d / (2.0 * PhaseRecoveryGain);
   for (ret = 0; ret < 4; ret++) {
     a[ret] = obj->ModulationPhaseOffset[ret];
   }
@@ -1419,7 +1419,7 @@ static void SystemCore_setup(const emlrtStack *sp, comm_CarrierSynchronizer *obj
   if (ret == 0) {
     obj->pActualPhaseOffset = 0.0;
   } else {
-    obj->pActualPhaseOffset = obj->CustomPhaseOffset;
+    obj->pActualPhaseOffset = obj->CustomPhaseOffset - 0.78539816339744828;
   }
 
   obj->pDigitalSynthesizerGain = -1.0;
@@ -1471,7 +1471,7 @@ static void SystemCore_checkTunablePropChange(const emlrtStack *sp,
   }
 }
 
-static void mw__internal__call__reset(InstanceStruct_8rrCCyrtiOptd4UQNBcUyG
+static void mw__internal__call__reset(InstanceStruct_eXXzoE6PEnLYV4PxmR72iF
   *moduleInstance, const emlrtStack *sp, real_T SamplesPerSymbol, real_T
   DampingFactor, real_T NormalizedLoopBandwidth)
 {
@@ -1637,7 +1637,7 @@ static void mw__internal__call__reset(InstanceStruct_8rrCCyrtiOptd4UQNBcUyG
   }
 }
 
-static void mw__internal__call__step(InstanceStruct_8rrCCyrtiOptd4UQNBcUyG
+static void mw__internal__call__step(InstanceStruct_eXXzoE6PEnLYV4PxmR72iF
   *moduleInstance, const emlrtStack *sp, real_T SamplesPerSymbol, real_T
   DampingFactor, real_T NormalizedLoopBandwidth, emxArray_creal_T *u0,
   emxArray_creal_T *b_y0)
@@ -1660,7 +1660,7 @@ static void mw__internal__call__step(InstanceStruct_8rrCCyrtiOptd4UQNBcUyG
   mw__internal__system___fcn(moduleInstance, &st, SamplesPerSymbol,
     DampingFactor, NormalizedLoopBandwidth, &b_u0, c_y0);
   u0_idx_0 = c_y0->size[0];
-  emlrtDimSizeGeqCheckR2012b(6175, u0_idx_0, &emlrtECI, sp);
+  emlrtDimSizeGeqCheckR2012b(12349, u0_idx_0, &emlrtECI, sp);
   u0_idx_0 = b_y0->size[0] * b_y0->size[1];
   b_y0->size[0] = c_y0->size[0];
   b_y0->size[1] = 1;
@@ -1674,7 +1674,7 @@ static void mw__internal__call__step(InstanceStruct_8rrCCyrtiOptd4UQNBcUyG
   emxFree_creal_T(&c_y0);
 }
 
-static void mw__internal__system___fcn(InstanceStruct_8rrCCyrtiOptd4UQNBcUyG
+static void mw__internal__system___fcn(InstanceStruct_eXXzoE6PEnLYV4PxmR72iF
   *moduleInstance, const emlrtStack *sp, real_T varargin_3, real_T varargin_4,
   real_T varargin_5, emxArray_creal_T *varargin_7, emxArray_creal_T *varargout_1)
 {
@@ -1888,9 +1888,9 @@ static void mw__internal__system___fcn(InstanceStruct_8rrCCyrtiOptd4UQNBcUyG
     d = (2.0 * obj->DampingFactor * PhaseRecoveryLoopBandwidth + 1.0) +
       PhaseRecoveryLoopBandwidth * PhaseRecoveryLoopBandwidth;
     obj->pProportionalGain = 4.0 * obj->DampingFactor *
-      PhaseRecoveryLoopBandwidth / d / PhaseRecoveryGain;
+      PhaseRecoveryLoopBandwidth / d / (2.0 * PhaseRecoveryGain);
     obj->pIntegratorGain = 4.0 * PhaseRecoveryLoopBandwidth *
-      PhaseRecoveryLoopBandwidth / d / PhaseRecoveryGain;
+      PhaseRecoveryLoopBandwidth / d / (2.0 * PhaseRecoveryGain);
     for (ret = 0; ret < 4; ret++) {
       c_u[ret] = obj->ModulationPhaseOffset[ret];
     }
@@ -1903,7 +1903,7 @@ static void mw__internal__system___fcn(InstanceStruct_8rrCCyrtiOptd4UQNBcUyG
     if (ret == 0) {
       obj->pActualPhaseOffset = 0.0;
     } else {
-      obj->pActualPhaseOffset = obj->CustomPhaseOffset;
+      obj->pActualPhaseOffset = obj->CustomPhaseOffset - 0.78539816339744828;
     }
   }
 
@@ -1965,7 +1965,8 @@ static void CarrierSynchronizer_stepImpl(const emlrtStack *sp,
   emxEnsureCapacity_creal_T1(phaseCorrection, i);
   i = input->size[0] - 1;
   for (k = 0; k <= i; k++) {
-    phErr = muDoubleScalarSign(previousSample.re) * previousSample.im;
+    phErr = muDoubleScalarSign(previousSample.re) * previousSample.im -
+      muDoubleScalarSign(previousSample.im) * previousSample.re;
     b = obj->pPhase;
     previousSample.re = b * 0.0;
     previousSample.im = b;
@@ -2026,7 +2027,7 @@ static void CarrierSynchronizer_stepImpl(const emlrtStack *sp,
   obj->pDDSPreviousInput = DDSPreviousInp;
 }
 
-static const mxArray *emlrt_marshallOut(InstanceStruct_8rrCCyrtiOptd4UQNBcUyG
+static const mxArray *emlrt_marshallOut(InstanceStruct_eXXzoE6PEnLYV4PxmR72iF
   *moduleInstance, const emlrtStack *sp)
 {
   const mxArray *y;
@@ -2202,7 +2203,7 @@ static const mxArray *emlrt_marshallOut(InstanceStruct_8rrCCyrtiOptd4UQNBcUyG
 }
 
 static const mxArray *cgxe_mdl_get_sim_state
-  (InstanceStruct_8rrCCyrtiOptd4UQNBcUyG *moduleInstance)
+  (InstanceStruct_eXXzoE6PEnLYV4PxmR72iF *moduleInstance)
 {
   const mxArray *st;
   emlrtStack b_st = { NULL,            /* site */
@@ -2216,7 +2217,7 @@ static const mxArray *cgxe_mdl_get_sim_state
   return st;
 }
 
-static void emlrt_marshallIn(InstanceStruct_8rrCCyrtiOptd4UQNBcUyG
+static void emlrt_marshallIn(InstanceStruct_eXXzoE6PEnLYV4PxmR72iF
   *moduleInstance, const emlrtStack *sp, const mxArray *u)
 {
   emlrtMsgIdentifier thisId;
@@ -2415,7 +2416,7 @@ static boolean_T m_emlrt_marshallIn(const emlrtStack *sp, const mxArray
   return y;
 }
 
-static void cgxe_mdl_set_sim_state(InstanceStruct_8rrCCyrtiOptd4UQNBcUyG
+static void cgxe_mdl_set_sim_state(InstanceStruct_eXXzoE6PEnLYV4PxmR72iF
   *moduleInstance, const mxArray *st)
 {
   emlrtStack b_st = { NULL,            /* site */
@@ -2716,16 +2717,16 @@ static void emxEnsureCapacity_creal_T1(emxArray_creal_T *emxArray, int32_T
   }
 }
 
-static void init_simulink_io_address(InstanceStruct_8rrCCyrtiOptd4UQNBcUyG
+static void init_simulink_io_address(InstanceStruct_eXXzoE6PEnLYV4PxmR72iF
   *moduleInstance)
 {
   moduleInstance->emlrtRootTLSGlobal = (void *)cgxertGetEMLRTCtx
     (moduleInstance->S);
-  moduleInstance->u0_data = (creal_T (*)[6175])cgxertGetInputPortSignal
+  moduleInstance->u0_data = (creal_T (*)[12349])cgxertGetInputPortSignal
     (moduleInstance->S, 0);
   moduleInstance->u0_sizes = (int32_T (*)[2])cgxertGetCurrentInputPortDimensions
     (moduleInstance->S, 0);
-  moduleInstance->y0_data = (creal_T (*)[6175])cgxertGetOutputPortSignal
+  moduleInstance->y0_data = (creal_T (*)[12349])cgxertGetOutputPortSignal
     (moduleInstance->S, 0);
   moduleInstance->y0_sizes = (int32_T (*)[2])
     cgxertGetCurrentOutputPortDimensions(moduleInstance->S, 0);
@@ -2733,78 +2734,78 @@ static void init_simulink_io_address(InstanceStruct_8rrCCyrtiOptd4UQNBcUyG
 }
 
 /* CGXE Glue Code */
-static void mdlOutputs_8rrCCyrtiOptd4UQNBcUyG(SimStruct *S, int_T tid)
+static void mdlOutputs_eXXzoE6PEnLYV4PxmR72iF(SimStruct *S, int_T tid)
 {
-  InstanceStruct_8rrCCyrtiOptd4UQNBcUyG *moduleInstance =
-    (InstanceStruct_8rrCCyrtiOptd4UQNBcUyG *)cgxertGetRuntimeInstance(S);
+  InstanceStruct_eXXzoE6PEnLYV4PxmR72iF *moduleInstance =
+    (InstanceStruct_eXXzoE6PEnLYV4PxmR72iF *)cgxertGetRuntimeInstance(S);
   cgxe_mdl_outputs(moduleInstance);
 }
 
-static void mdlInitialize_8rrCCyrtiOptd4UQNBcUyG(SimStruct *S)
+static void mdlInitialize_eXXzoE6PEnLYV4PxmR72iF(SimStruct *S)
 {
-  InstanceStruct_8rrCCyrtiOptd4UQNBcUyG *moduleInstance =
-    (InstanceStruct_8rrCCyrtiOptd4UQNBcUyG *)cgxertGetRuntimeInstance(S);
+  InstanceStruct_eXXzoE6PEnLYV4PxmR72iF *moduleInstance =
+    (InstanceStruct_eXXzoE6PEnLYV4PxmR72iF *)cgxertGetRuntimeInstance(S);
   cgxe_mdl_initialize(moduleInstance);
 }
 
-static void mdlUpdate_8rrCCyrtiOptd4UQNBcUyG(SimStruct *S, int_T tid)
+static void mdlUpdate_eXXzoE6PEnLYV4PxmR72iF(SimStruct *S, int_T tid)
 {
-  InstanceStruct_8rrCCyrtiOptd4UQNBcUyG *moduleInstance =
-    (InstanceStruct_8rrCCyrtiOptd4UQNBcUyG *)cgxertGetRuntimeInstance(S);
+  InstanceStruct_eXXzoE6PEnLYV4PxmR72iF *moduleInstance =
+    (InstanceStruct_eXXzoE6PEnLYV4PxmR72iF *)cgxertGetRuntimeInstance(S);
   cgxe_mdl_update(moduleInstance);
 }
 
-static mxArray* getSimState_8rrCCyrtiOptd4UQNBcUyG(SimStruct *S)
+static mxArray* getSimState_eXXzoE6PEnLYV4PxmR72iF(SimStruct *S)
 {
   mxArray* mxSS;
-  InstanceStruct_8rrCCyrtiOptd4UQNBcUyG *moduleInstance =
-    (InstanceStruct_8rrCCyrtiOptd4UQNBcUyG *)cgxertGetRuntimeInstance(S);
+  InstanceStruct_eXXzoE6PEnLYV4PxmR72iF *moduleInstance =
+    (InstanceStruct_eXXzoE6PEnLYV4PxmR72iF *)cgxertGetRuntimeInstance(S);
   mxSS = (mxArray *) cgxe_mdl_get_sim_state(moduleInstance);
   return mxSS;
 }
 
-static void setSimState_8rrCCyrtiOptd4UQNBcUyG(SimStruct *S, const mxArray *ss)
+static void setSimState_eXXzoE6PEnLYV4PxmR72iF(SimStruct *S, const mxArray *ss)
 {
-  InstanceStruct_8rrCCyrtiOptd4UQNBcUyG *moduleInstance =
-    (InstanceStruct_8rrCCyrtiOptd4UQNBcUyG *)cgxertGetRuntimeInstance(S);
+  InstanceStruct_eXXzoE6PEnLYV4PxmR72iF *moduleInstance =
+    (InstanceStruct_eXXzoE6PEnLYV4PxmR72iF *)cgxertGetRuntimeInstance(S);
   cgxe_mdl_set_sim_state(moduleInstance, emlrtAlias(ss));
 }
 
-static void mdlTerminate_8rrCCyrtiOptd4UQNBcUyG(SimStruct *S)
+static void mdlTerminate_eXXzoE6PEnLYV4PxmR72iF(SimStruct *S)
 {
-  InstanceStruct_8rrCCyrtiOptd4UQNBcUyG *moduleInstance =
-    (InstanceStruct_8rrCCyrtiOptd4UQNBcUyG *)cgxertGetRuntimeInstance(S);
+  InstanceStruct_eXXzoE6PEnLYV4PxmR72iF *moduleInstance =
+    (InstanceStruct_eXXzoE6PEnLYV4PxmR72iF *)cgxertGetRuntimeInstance(S);
   cgxe_mdl_terminate(moduleInstance);
   free((void *)moduleInstance);
 }
 
-static void mdlEnable_8rrCCyrtiOptd4UQNBcUyG(SimStruct *S)
+static void mdlEnable_eXXzoE6PEnLYV4PxmR72iF(SimStruct *S)
 {
-  InstanceStruct_8rrCCyrtiOptd4UQNBcUyG *moduleInstance =
-    (InstanceStruct_8rrCCyrtiOptd4UQNBcUyG *)cgxertGetRuntimeInstance(S);
+  InstanceStruct_eXXzoE6PEnLYV4PxmR72iF *moduleInstance =
+    (InstanceStruct_eXXzoE6PEnLYV4PxmR72iF *)cgxertGetRuntimeInstance(S);
   cgxe_mdl_enable(moduleInstance);
 }
 
-static void mdlDisable_8rrCCyrtiOptd4UQNBcUyG(SimStruct *S)
+static void mdlDisable_eXXzoE6PEnLYV4PxmR72iF(SimStruct *S)
 {
-  InstanceStruct_8rrCCyrtiOptd4UQNBcUyG *moduleInstance =
-    (InstanceStruct_8rrCCyrtiOptd4UQNBcUyG *)cgxertGetRuntimeInstance(S);
+  InstanceStruct_eXXzoE6PEnLYV4PxmR72iF *moduleInstance =
+    (InstanceStruct_eXXzoE6PEnLYV4PxmR72iF *)cgxertGetRuntimeInstance(S);
   cgxe_mdl_disable(moduleInstance);
 }
 
-static void mdlStart_8rrCCyrtiOptd4UQNBcUyG(SimStruct *S)
+static void mdlStart_eXXzoE6PEnLYV4PxmR72iF(SimStruct *S)
 {
-  InstanceStruct_8rrCCyrtiOptd4UQNBcUyG *moduleInstance =
-    (InstanceStruct_8rrCCyrtiOptd4UQNBcUyG *)calloc(1, sizeof
-    (InstanceStruct_8rrCCyrtiOptd4UQNBcUyG));
+  InstanceStruct_eXXzoE6PEnLYV4PxmR72iF *moduleInstance =
+    (InstanceStruct_eXXzoE6PEnLYV4PxmR72iF *)calloc(1, sizeof
+    (InstanceStruct_eXXzoE6PEnLYV4PxmR72iF));
   moduleInstance->S = S;
   cgxertSetRuntimeInstance(S, (void *)moduleInstance);
-  ssSetmdlOutputs(S, mdlOutputs_8rrCCyrtiOptd4UQNBcUyG);
-  ssSetmdlInitializeConditions(S, mdlInitialize_8rrCCyrtiOptd4UQNBcUyG);
-  ssSetmdlUpdate(S, mdlUpdate_8rrCCyrtiOptd4UQNBcUyG);
-  ssSetmdlTerminate(S, mdlTerminate_8rrCCyrtiOptd4UQNBcUyG);
-  ssSetmdlEnable(S, mdlEnable_8rrCCyrtiOptd4UQNBcUyG);
-  ssSetmdlDisable(S, mdlDisable_8rrCCyrtiOptd4UQNBcUyG);
+  ssSetmdlOutputs(S, mdlOutputs_eXXzoE6PEnLYV4PxmR72iF);
+  ssSetmdlInitializeConditions(S, mdlInitialize_eXXzoE6PEnLYV4PxmR72iF);
+  ssSetmdlUpdate(S, mdlUpdate_eXXzoE6PEnLYV4PxmR72iF);
+  ssSetmdlTerminate(S, mdlTerminate_eXXzoE6PEnLYV4PxmR72iF);
+  ssSetmdlEnable(S, mdlEnable_eXXzoE6PEnLYV4PxmR72iF);
+  ssSetmdlDisable(S, mdlDisable_eXXzoE6PEnLYV4PxmR72iF);
   cgxe_mdl_start(moduleInstance);
 
   {
@@ -2814,42 +2815,42 @@ static void mdlStart_8rrCCyrtiOptd4UQNBcUyG(SimStruct *S)
   }
 }
 
-static void mdlProcessParameters_8rrCCyrtiOptd4UQNBcUyG(SimStruct *S)
+static void mdlProcessParameters_eXXzoE6PEnLYV4PxmR72iF(SimStruct *S)
 {
 }
 
-void method_dispatcher_8rrCCyrtiOptd4UQNBcUyG(SimStruct *S, int_T method, void
+void method_dispatcher_eXXzoE6PEnLYV4PxmR72iF(SimStruct *S, int_T method, void
   *data)
 {
   switch (method) {
    case SS_CALL_MDL_START:
-    mdlStart_8rrCCyrtiOptd4UQNBcUyG(S);
+    mdlStart_eXXzoE6PEnLYV4PxmR72iF(S);
     break;
 
    case SS_CALL_MDL_PROCESS_PARAMETERS:
-    mdlProcessParameters_8rrCCyrtiOptd4UQNBcUyG(S);
+    mdlProcessParameters_eXXzoE6PEnLYV4PxmR72iF(S);
     break;
 
    case SS_CALL_MDL_GET_SIM_STATE:
-    *((mxArray**) data) = getSimState_8rrCCyrtiOptd4UQNBcUyG(S);
+    *((mxArray**) data) = getSimState_eXXzoE6PEnLYV4PxmR72iF(S);
     break;
 
    case SS_CALL_MDL_SET_SIM_STATE:
-    setSimState_8rrCCyrtiOptd4UQNBcUyG(S, (const mxArray *) data);
+    setSimState_eXXzoE6PEnLYV4PxmR72iF(S, (const mxArray *) data);
     break;
 
    default:
     /* Unhandled method */
     /*
        sf_mex_error_message("Stateflow Internal Error:\n"
-       "Error calling method dispatcher for module: 8rrCCyrtiOptd4UQNBcUyG.\n"
+       "Error calling method dispatcher for module: eXXzoE6PEnLYV4PxmR72iF.\n"
        "Can't handle method %d.\n", method);
      */
     break;
   }
 }
 
-mxArray *cgxe_8rrCCyrtiOptd4UQNBcUyG_BuildInfoUpdate(void)
+mxArray *cgxe_eXXzoE6PEnLYV4PxmR72iF_BuildInfoUpdate(void)
 {
   mxArray * mxBIArgs;
   mxArray * elem_1;
@@ -2906,7 +2907,7 @@ mxArray *cgxe_8rrCCyrtiOptd4UQNBcUyG_BuildInfoUpdate(void)
   return mxBIArgs;
 }
 
-mxArray *cgxe_8rrCCyrtiOptd4UQNBcUyG_fallback_info(void)
+mxArray *cgxe_eXXzoE6PEnLYV4PxmR72iF_fallback_info(void)
 {
   const char* fallbackInfoFields[] = { "fallbackType", "incompatiableSymbol" };
 

@@ -1,43 +1,43 @@
 /* Include files */
 
 #include "sdruqpskrx_OriginalQPSK_cgxe.h"
-#include "m_4DoyfzVWrL7ZTU2c84qGl.h"
-#include "m_9wL5t4Wqkf4qe0Xm8Vg82C.h"
-#include "m_8rrCCyrtiOptd4UQNBcUyG.h"
-#include "m_gNp5vVXUljDcfIAvnPLG7F.h"
+#include "m_UxOvoSHoDqYMTVOX24wWpF.h"
+#include "m_1HhAkxmSPWHD9TGYKVFeaD.h"
+#include "m_WWp8y15qiWHT0yMoxQngXF.h"
+#include "m_eXXzoE6PEnLYV4PxmR72iF.h"
 
 unsigned int cgxe_sdruqpskrx_OriginalQPSK_method_dispatcher(SimStruct* S, int_T
   method, void* data)
 {
-  if (ssGetChecksum0(S) == 1323789718 &&
-      ssGetChecksum1(S) == 207350879 &&
-      ssGetChecksum2(S) == 3187555614 &&
-      ssGetChecksum3(S) == 1243374531) {
-    method_dispatcher_4DoyfzVWrL7ZTU2c84qGl(S, method, data);
+  if (ssGetChecksum0(S) == 2043223478 &&
+      ssGetChecksum1(S) == 193077703 &&
+      ssGetChecksum2(S) == 645941016 &&
+      ssGetChecksum3(S) == 1114361504) {
+    method_dispatcher_UxOvoSHoDqYMTVOX24wWpF(S, method, data);
     return 1;
   }
 
-  if (ssGetChecksum0(S) == 1574239491 &&
-      ssGetChecksum1(S) == 3905595136 &&
-      ssGetChecksum2(S) == 2199938747 &&
-      ssGetChecksum3(S) == 835869757) {
-    method_dispatcher_9wL5t4Wqkf4qe0Xm8Vg82C(S, method, data);
+  if (ssGetChecksum0(S) == 2058956287 &&
+      ssGetChecksum1(S) == 2384873423 &&
+      ssGetChecksum2(S) == 1212798989 &&
+      ssGetChecksum3(S) == 2041892846) {
+    method_dispatcher_1HhAkxmSPWHD9TGYKVFeaD(S, method, data);
     return 1;
   }
 
-  if (ssGetChecksum0(S) == 2025989489 &&
-      ssGetChecksum1(S) == 994100710 &&
-      ssGetChecksum2(S) == 4151493251 &&
-      ssGetChecksum3(S) == 3483939271) {
-    method_dispatcher_8rrCCyrtiOptd4UQNBcUyG(S, method, data);
+  if (ssGetChecksum0(S) == 3363663004 &&
+      ssGetChecksum1(S) == 4255815326 &&
+      ssGetChecksum2(S) == 1038040466 &&
+      ssGetChecksum3(S) == 2922161120) {
+    method_dispatcher_WWp8y15qiWHT0yMoxQngXF(S, method, data);
     return 1;
   }
 
-  if (ssGetChecksum0(S) == 2652991982 &&
-      ssGetChecksum1(S) == 40759377 &&
-      ssGetChecksum2(S) == 53016139 &&
-      ssGetChecksum3(S) == 1266577320) {
-    method_dispatcher_gNp5vVXUljDcfIAvnPLG7F(S, method, data);
+  if (ssGetChecksum0(S) == 3872411235 &&
+      ssGetChecksum1(S) == 1231707858 &&
+      ssGetChecksum2(S) == 2528044730 &&
+      ssGetChecksum3(S) == 2590252956) {
+    method_dispatcher_eXXzoE6PEnLYV4PxmR72iF(S, method, data);
     return 1;
   }
 

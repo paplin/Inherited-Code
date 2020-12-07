@@ -1,7 +1,7 @@
 /* Include files */
 
 #include "modelInterface.h"
-#include "m_4DoyfzVWrL7ZTU2c84qGl.h"
+#include "m_UxOvoSHoDqYMTVOX24wWpF.h"
 #include <string.h>
 #include "mwmathutil.h"
 
@@ -200,7 +200,7 @@ static emlrtDCInfo c_emlrtDCI = { 280, /* lineNo */
 };
 
 static emlrtBCInfo d_emlrtBCI = { 1,   /* iFirst */
-  28065,                               /* iLast */
+  56130,                               /* iLast */
   280,                                 /* lineNo */
   29,                                  /* colNo */
   "",                                  /* aName */
@@ -325,7 +325,7 @@ static emlrtDCInfo h_emlrtDCI = { 337, /* lineNo */
 };
 
 static emlrtBCInfo m_emlrtBCI = { 1,   /* iFirst */
-  28065,                               /* iLast */
+  56130,                               /* iLast */
   339,                                 /* lineNo */
   65,                                  /* colNo */
   "",                                  /* aName */
@@ -347,87 +347,81 @@ static emlrtRSInfo v_emlrtRSI = { 14,  /* lineNo */
 };
 
 /* Function Declarations */
-static void cgxe_mdl_start(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl *moduleInstance);
-static void cgxe_mdl_initialize(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl
+static void cgxe_mdl_start(InstanceStruct_UxOvoSHoDqYMTVOX24wWpF *moduleInstance);
+static void cgxe_mdl_initialize(InstanceStruct_UxOvoSHoDqYMTVOX24wWpF
   *moduleInstance);
-static void cgxe_mdl_outputs(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl
+static void cgxe_mdl_outputs(InstanceStruct_UxOvoSHoDqYMTVOX24wWpF
   *moduleInstance);
-static void cgxe_mdl_update(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl *moduleInstance);
-static void cgxe_mdl_enable(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl *moduleInstance);
-static void cgxe_mdl_disable(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl
+static void cgxe_mdl_update(InstanceStruct_UxOvoSHoDqYMTVOX24wWpF
   *moduleInstance);
-static void cgxe_mdl_terminate(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl
+static void cgxe_mdl_enable(InstanceStruct_UxOvoSHoDqYMTVOX24wWpF
   *moduleInstance);
-static void mw__internal__system__init__fcn(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl
+static void cgxe_mdl_disable(InstanceStruct_UxOvoSHoDqYMTVOX24wWpF
   *moduleInstance);
+static void cgxe_mdl_terminate(InstanceStruct_UxOvoSHoDqYMTVOX24wWpF
+  *moduleInstance);
+static void mw__internal__system__init__fcn
+  (InstanceStruct_UxOvoSHoDqYMTVOX24wWpF *moduleInstance);
 static void mw__internal__system__terminate__fcn
-  (InstanceStruct_4DoyfzVWrL7ZTU2c84qGl *moduleInstance);
-static void mw__internal__call__setup(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl
-  *moduleInstance, const emlrtStack *sp, emxArray_creal_T *u0, int32_T u1_size[2],
-  int32_T u2_size[2]);
+  (InstanceStruct_UxOvoSHoDqYMTVOX24wWpF *moduleInstance);
+static void mw__internal__call__setup(InstanceStruct_UxOvoSHoDqYMTVOX24wWpF
+  *moduleInstance, const emlrtStack *sp, emxArray_creal_T *u0, emxArray_real_T
+  *u1, emxArray_real_T *u2);
 static comm_internal_examples_FrameSynchronizer
   *FrameSynchronizer_FrameSynchronizer(comm_internal_examples_FrameSynchronizer *
   obj);
 static void SystemCore_setup(const emlrtStack *sp,
   comm_internal_examples_FrameSynchronizer *obj, emxArray_creal_T *varargin_1,
-  int32_T varargin_2_size[1], int32_T varargin_3_size[1]);
-static void mw__internal__call__reset(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl
+  emxArray_real_T *varargin_2, emxArray_real_T *varargin_3);
+static void mw__internal__call__reset(InstanceStruct_UxOvoSHoDqYMTVOX24wWpF
   *moduleInstance, const emlrtStack *sp);
-static void mw__internal__call__step(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl
-  *moduleInstance, const emlrtStack *sp, emxArray_creal_T *u0, real_T b_u1_data[],
-  int32_T u1_size[2], real_T b_u2_data[], int32_T u2_size[2], creal_T c_y0[5613],
-  boolean_T *c_y1);
-static void SystemCore_step(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl *moduleInstance,
-  const emlrtStack *sp, comm_internal_examples_FrameSynchronizer *obj,
-  emxArray_creal_T *varargin_1, real_T varargin_2_data[], int32_T
-  varargin_2_size[1], real_T b_varargin_3_data[], int32_T varargin_3_size[1],
-  creal_T varargout_1[5613], boolean_T *varargout_2);
+static void mw__internal__call__step(InstanceStruct_UxOvoSHoDqYMTVOX24wWpF
+  *moduleInstance, const emlrtStack *sp, emxArray_creal_T *u0, emxArray_real_T
+  *u1, emxArray_real_T *u2, creal_T c_y0[11226], boolean_T *c_y1);
+static void SystemCore_step(const emlrtStack *sp,
+  comm_internal_examples_FrameSynchronizer *obj, emxArray_creal_T *varargin_1,
+  emxArray_real_T *varargin_2, emxArray_real_T *varargin_3, creal_T varargout_1
+  [11226], boolean_T *varargout_2);
 static void SystemCore_setupAndReset(const emlrtStack *sp,
   comm_internal_examples_FrameSynchronizer *obj, emxArray_creal_T *varargin_1,
-  int32_T varargin_2_size[1], int32_T varargin_3_size[1]);
+  emxArray_real_T *varargin_2, emxArray_real_T *varargin_3);
 static void SystemCore_systemblock_prestep(const emlrtStack *sp,
   comm_internal_examples_FrameSynchronizer *obj, emxArray_creal_T *varargin_1,
-  real_T varargin_2_data[], int32_T varargin_2_size[1], real_T
-  b_varargin_3_data[], int32_T varargin_3_size[1]);
+  emxArray_real_T *varargin_2, emxArray_real_T *varargin_3);
 static void FrameSynchronizer_validateInputsImpl(const emlrtStack *sp,
-  emxArray_creal_T *varargin_1, real_T varargin_2_data[], int32_T
-  varargin_2_size[1], real_T b_varargin_3_data[], int32_T varargin_3_size[1]);
-static boolean_T all(real_T a_data[], int32_T a_size[1]);
+  emxArray_creal_T *varargin_1, emxArray_real_T *varargin_2, emxArray_real_T
+  *varargin_3);
+static boolean_T all(emxArray_real_T *a);
 static boolean_T SystemCore_detectInputSizeChange
   (comm_internal_examples_FrameSynchronizer *obj, emxArray_creal_T *varargin_1,
-   int32_T varargin_2_size[1], int32_T varargin_3_size[1]);
-static void FrameSynchronizer_stepImpl(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl
-  *moduleInstance, const emlrtStack *sp,
+   emxArray_real_T *varargin_2, emxArray_real_T *varargin_3);
+static void FrameSynchronizer_stepImpl(const emlrtStack *sp,
   comm_internal_examples_FrameSynchronizer *obj, emxArray_creal_T *varargin_1,
-  real_T varargin_2_data[], int32_T varargin_2_size[1], real_T
-  b_varargin_3_data[], int32_T varargin_3_size[1], creal_T y[5613], boolean_T
-  *validFrm);
-static void maximum(real_T x_data[], int32_T x_size[1], real_T *ex, int32_T *idx);
-static void FrameSynchronizer_stepBitInput(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl *
-  moduleInstance, const emlrtStack *sp, comm_internal_examples_FrameSynchronizer
-  *obj, emxArray_creal_T *x, real_T idx_data[], int32_T idx_size[1], creal_T y
-  [5613], boolean_T *validFrm);
-static void FrameSynchronizer_setBuffer(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl
-  *moduleInstance, const emlrtStack *sp,
+  emxArray_real_T *varargin_2, emxArray_real_T *varargin_3, creal_T y[11226],
+  boolean_T *validFrm);
+static void maximum(emxArray_real_T *x, real_T *ex, int32_T *idx);
+static void FrameSynchronizer_stepBitInput(const emlrtStack *sp,
+  comm_internal_examples_FrameSynchronizer *obj, emxArray_creal_T *x, real_T
+  idx_data[], int32_T idx_size[1], creal_T y[11226], boolean_T *validFrm);
+static void FrameSynchronizer_setBuffer(const emlrtStack *sp,
   comm_internal_examples_FrameSynchronizer *obj, emxArray_creal_T *x, real_T
   preambleEndIdx_data[], int32_T preambleEndIdx_size[1]);
-static void b_mod(real_T x_data[], int32_T x_size[2], real_T r_data[], int32_T
-                  r_size[2]);
+static void b_mod(emxArray_real_T *x, emxArray_real_T *r);
 static real_T floatmod(real_T x);
 static real_T c_mod(real_T x);
 static void FrameSynchronizer_getBuffer(const emlrtStack *sp,
-  comm_internal_examples_FrameSynchronizer *obj, creal_T y[5613], boolean_T
+  comm_internal_examples_FrameSynchronizer *obj, creal_T y[11226], boolean_T
   *validFrm);
-static void d_mod(real_T x[5613], real_T r[5613]);
+static void d_mod(real_T x[11226], real_T r[11226]);
 static const mxArray *emlrt_marshallOut(const emlrtStack *sp, const char_T b_u
   [45]);
 static const mxArray *b_emlrt_marshallOut(const emlrtStack *sp, const char_T
   b_u[4]);
-static const mxArray *c_emlrt_marshallOut(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl
-  *moduleInstance, const emlrtStack *sp);
+static const mxArray *c_emlrt_marshallOut(InstanceStruct_UxOvoSHoDqYMTVOX24wWpF *
+  moduleInstance, const emlrtStack *sp);
 static const mxArray *cgxe_mdl_get_sim_state
-  (InstanceStruct_4DoyfzVWrL7ZTU2c84qGl *moduleInstance);
-static void emlrt_marshallIn(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl
+  (InstanceStruct_UxOvoSHoDqYMTVOX24wWpF *moduleInstance);
+static void emlrt_marshallIn(InstanceStruct_UxOvoSHoDqYMTVOX24wWpF
   *moduleInstance, const emlrtStack *sp, const mxArray *b_u);
 static void b_emlrt_marshallIn(const emlrtStack *sp, const mxArray *b_sysobj,
   const char_T *identifier, comm_internal_examples_FrameSynchronizer *y);
@@ -444,12 +438,12 @@ static void g_emlrt_marshallIn(const emlrtStack *sp, const mxArray *b_u, const
 static real_T h_emlrt_marshallIn(const emlrtStack *sp, const mxArray *b_u, const
   emlrtMsgIdentifier *parentId);
 static void i_emlrt_marshallIn(const emlrtStack *sp, const mxArray *b_u, const
-  emlrtMsgIdentifier *parentId, creal_T y[28065]);
+  emlrtMsgIdentifier *parentId, creal_T y[56130]);
 static void j_emlrt_marshallIn(const emlrtStack *sp, const mxArray *b_u, const
   emlrtMsgIdentifier *parentId, real_T y[5]);
 static boolean_T k_emlrt_marshallIn(const emlrtStack *sp, const mxArray
   *b_sysobj_not_empty, const char_T *identifier);
-static void cgxe_mdl_set_sim_state(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl
+static void cgxe_mdl_set_sim_state(InstanceStruct_UxOvoSHoDqYMTVOX24wWpF
   *moduleInstance, const mxArray *st);
 static const mxArray *message(const emlrtStack *sp, const mxArray *b, const
   mxArray *c, emlrtMCInfo *location);
@@ -466,18 +460,24 @@ static void n_emlrt_marshallIn(const emlrtStack *sp, const mxArray *src, const
 static real_T o_emlrt_marshallIn(const emlrtStack *sp, const mxArray *src, const
   emlrtMsgIdentifier *msgId);
 static void p_emlrt_marshallIn(const emlrtStack *sp, const mxArray *src, const
-  emlrtMsgIdentifier *msgId, creal_T ret[28065]);
+  emlrtMsgIdentifier *msgId, creal_T ret[56130]);
 static void q_emlrt_marshallIn(const emlrtStack *sp, const mxArray *src, const
   emlrtMsgIdentifier *msgId, real_T ret[5]);
 static void emxEnsureCapacity_creal_T(emxArray_creal_T *emxArray, int32_T
   oldNumel);
+static void emxEnsureCapacity_real_T(emxArray_real_T *emxArray, int32_T oldNumel);
 static void emxInit_creal_T(emxArray_creal_T **pEmxArray, int32_T numDimensions);
+static void emxInit_real_T(emxArray_real_T **pEmxArray, int32_T numDimensions);
 static void emxFree_creal_T(emxArray_creal_T **pEmxArray);
-static void init_simulink_io_address(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl
+static void emxFree_real_T(emxArray_real_T **pEmxArray);
+static void emxEnsureCapacity_real_T1(emxArray_real_T *emxArray, int32_T
+  oldNumel);
+static void emxInit_real_T1(emxArray_real_T **pEmxArray, int32_T numDimensions);
+static void init_simulink_io_address(InstanceStruct_UxOvoSHoDqYMTVOX24wWpF
   *moduleInstance);
 
 /* Function Definitions */
-static void cgxe_mdl_start(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl *moduleInstance)
+static void cgxe_mdl_start(InstanceStruct_UxOvoSHoDqYMTVOX24wWpF *moduleInstance)
 {
   emlrtStack st = { NULL,              /* site */
     NULL,                              /* tls */
@@ -487,10 +487,8 @@ static void cgxe_mdl_start(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl *moduleInstance)
   emxArray_creal_T *u_tmp0;
   int32_T i;
   int32_T loop_ub;
-  real_T b_u_tmp1_data[6175];
-  int32_T u_tmp1_size[2];
-  real_T b_u_tmp2_data[6175];
-  int32_T u_tmp2_size[2];
+  emxArray_real_T *u_tmp1;
+  emxArray_real_T *u_tmp2;
   init_simulink_io_address(moduleInstance);
   st.tls = moduleInstance->emlrtRootTLSGlobal;
   emxInit_creal_T(&u_tmp0, 2);
@@ -506,29 +504,34 @@ static void cgxe_mdl_start(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl *moduleInstance)
     u_tmp0->data[i].im = (*moduleInstance->u0_data)[i].im;
   }
 
-  u_tmp1_size[0] = (*moduleInstance->u1_sizes)[0];
-  u_tmp1_size[1] = (*moduleInstance->u1_sizes)[1];
+  emxInit_real_T(&u_tmp1, 2);
+  i = u_tmp1->size[0] * u_tmp1->size[1];
+  u_tmp1->size[0] = (*moduleInstance->u1_sizes)[0];
+  u_tmp1->size[1] = (*moduleInstance->u1_sizes)[1];
+  emxEnsureCapacity_real_T(u_tmp1, i);
   loop_ub = (*moduleInstance->u1_sizes)[0] * (*moduleInstance->u1_sizes)[1] - 1;
-  if (0 <= loop_ub) {
-    memcpy(&b_u_tmp1_data[0], &(*moduleInstance->u1_data)[0], (uint32_T)
-           ((loop_ub + 1) * (int32_T)sizeof(real_T)));
+  for (i = 0; i <= loop_ub; i++) {
+    u_tmp1->data[i] = (*moduleInstance->u1_data)[i];
   }
 
-  u_tmp2_size[0] = (*moduleInstance->u2_sizes)[0];
-  u_tmp2_size[1] = (*moduleInstance->u2_sizes)[1];
+  emxInit_real_T(&u_tmp2, 2);
+  i = u_tmp2->size[0] * u_tmp2->size[1];
+  u_tmp2->size[0] = (*moduleInstance->u2_sizes)[0];
+  u_tmp2->size[1] = (*moduleInstance->u2_sizes)[1];
+  emxEnsureCapacity_real_T(u_tmp2, i);
   loop_ub = (*moduleInstance->u2_sizes)[0] * (*moduleInstance->u2_sizes)[1] - 1;
-  if (0 <= loop_ub) {
-    memcpy(&b_u_tmp2_data[0], &(*moduleInstance->u2_data)[0], (uint32_T)
-           ((loop_ub + 1) * (int32_T)sizeof(real_T)));
+  for (i = 0; i <= loop_ub; i++) {
+    u_tmp2->data[i] = (*moduleInstance->u2_data)[i];
   }
 
-  mw__internal__call__setup(moduleInstance, &st, u_tmp0, u_tmp1_size,
-    u_tmp2_size);
+  mw__internal__call__setup(moduleInstance, &st, u_tmp0, u_tmp1, u_tmp2);
   cgxertRestoreGcb(moduleInstance->S, -1, -1);
+  emxFree_real_T(&u_tmp2);
+  emxFree_real_T(&u_tmp1);
   emxFree_creal_T(&u_tmp0);
 }
 
-static void cgxe_mdl_initialize(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl
+static void cgxe_mdl_initialize(InstanceStruct_UxOvoSHoDqYMTVOX24wWpF
   *moduleInstance)
 {
   emlrtStack st = { NULL,              /* site */
@@ -542,7 +545,7 @@ static void cgxe_mdl_initialize(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl
   cgxertRestoreGcb(moduleInstance->S, -1, -1);
 }
 
-static void cgxe_mdl_outputs(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl
+static void cgxe_mdl_outputs(InstanceStruct_UxOvoSHoDqYMTVOX24wWpF
   *moduleInstance)
 {
   emlrtStack st = { NULL,              /* site */
@@ -553,8 +556,8 @@ static void cgxe_mdl_outputs(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl
   emxArray_creal_T *u_tmp0;
   int32_T i;
   int32_T loop_ub;
-  int32_T u_tmp1_size[2];
-  int32_T u_tmp2_size[2];
+  emxArray_real_T *u_tmp1;
+  emxArray_real_T *u_tmp2;
   st.tls = moduleInstance->emlrtRootTLSGlobal;
   emxInit_creal_T(&u_tmp0, 2);
   cgxertSetGcb(moduleInstance->S, -1, -1);
@@ -570,46 +573,53 @@ static void cgxe_mdl_outputs(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl
     u_tmp0->data[i].im = (*moduleInstance->u0_data)[i].im;
   }
 
-  u_tmp1_size[0] = (*moduleInstance->u1_sizes)[0];
-  u_tmp1_size[1] = (*moduleInstance->u1_sizes)[1];
+  emxInit_real_T(&u_tmp1, 2);
+  i = u_tmp1->size[0] * u_tmp1->size[1];
+  u_tmp1->size[0] = (*moduleInstance->u1_sizes)[0];
+  u_tmp1->size[1] = (*moduleInstance->u1_sizes)[1];
+  emxEnsureCapacity_real_T(u_tmp1, i);
   loop_ub = (*moduleInstance->u1_sizes)[0] * (*moduleInstance->u1_sizes)[1] - 1;
-  if (0 <= loop_ub) {
-    memcpy(&moduleInstance->u_tmp1_data[0], &(*moduleInstance->u1_data)[0],
-           (uint32_T)((loop_ub + 1) * (int32_T)sizeof(real_T)));
+  for (i = 0; i <= loop_ub; i++) {
+    u_tmp1->data[i] = (*moduleInstance->u1_data)[i];
   }
 
-  u_tmp2_size[0] = (*moduleInstance->u2_sizes)[0];
-  u_tmp2_size[1] = (*moduleInstance->u2_sizes)[1];
+  emxInit_real_T(&u_tmp2, 2);
+  i = u_tmp2->size[0] * u_tmp2->size[1];
+  u_tmp2->size[0] = (*moduleInstance->u2_sizes)[0];
+  u_tmp2->size[1] = (*moduleInstance->u2_sizes)[1];
+  emxEnsureCapacity_real_T(u_tmp2, i);
   loop_ub = (*moduleInstance->u2_sizes)[0] * (*moduleInstance->u2_sizes)[1] - 1;
-  if (0 <= loop_ub) {
-    memcpy(&moduleInstance->u_tmp2_data[0], &(*moduleInstance->u2_data)[0],
-           (uint32_T)((loop_ub + 1) * (int32_T)sizeof(real_T)));
+  for (i = 0; i <= loop_ub; i++) {
+    u_tmp2->data[i] = (*moduleInstance->u2_data)[i];
   }
 
-  mw__internal__call__step(moduleInstance, &st, u_tmp0,
-    moduleInstance->u_tmp1_data, u_tmp1_size, moduleInstance->u_tmp2_data,
-    u_tmp2_size, *moduleInstance->b_y0, moduleInstance->b_y1);
+  mw__internal__call__step(moduleInstance, &st, u_tmp0, u_tmp1, u_tmp2,
+    *moduleInstance->b_y0, moduleInstance->b_y1);
+  emxFree_real_T(&u_tmp2);
+  emxFree_real_T(&u_tmp1);
   emxFree_creal_T(&u_tmp0);
   cgxertRestoreGcb(moduleInstance->S, -1, -1);
 }
 
-static void cgxe_mdl_update(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl *moduleInstance)
-{
-  (void)moduleInstance;
-}
-
-static void cgxe_mdl_enable(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl *moduleInstance)
-{
-  (void)moduleInstance;
-}
-
-static void cgxe_mdl_disable(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl
+static void cgxe_mdl_update(InstanceStruct_UxOvoSHoDqYMTVOX24wWpF
   *moduleInstance)
 {
   (void)moduleInstance;
 }
 
-static void cgxe_mdl_terminate(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl
+static void cgxe_mdl_enable(InstanceStruct_UxOvoSHoDqYMTVOX24wWpF
+  *moduleInstance)
+{
+  (void)moduleInstance;
+}
+
+static void cgxe_mdl_disable(InstanceStruct_UxOvoSHoDqYMTVOX24wWpF
+  *moduleInstance)
+{
+  (void)moduleInstance;
+}
+
+static void cgxe_mdl_terminate(InstanceStruct_UxOvoSHoDqYMTVOX24wWpF
   *moduleInstance)
 {
   cgxertSetGcb(moduleInstance->S, -1, -1);
@@ -617,14 +627,14 @@ static void cgxe_mdl_terminate(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl
   cgxertRestoreGcb(moduleInstance->S, -1, -1);
 }
 
-static void mw__internal__system__init__fcn(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl
-  *moduleInstance)
+static void mw__internal__system__init__fcn
+  (InstanceStruct_UxOvoSHoDqYMTVOX24wWpF *moduleInstance)
 {
   moduleInstance->sysobj.matlabCodegenIsDeleted = true;
 }
 
 static void mw__internal__system__terminate__fcn
-  (InstanceStruct_4DoyfzVWrL7ZTU2c84qGl *moduleInstance)
+  (InstanceStruct_UxOvoSHoDqYMTVOX24wWpF *moduleInstance)
 {
   emlrtStack st;
   comm_internal_examples_FrameSynchronizer *obj;
@@ -644,16 +654,20 @@ static void mw__internal__system__terminate__fcn
   }
 }
 
-static void mw__internal__call__setup(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl
-  *moduleInstance, const emlrtStack *sp, emxArray_creal_T *u0, int32_T u1_size[2],
-  int32_T u2_size[2])
+static void mw__internal__call__setup(InstanceStruct_UxOvoSHoDqYMTVOX24wWpF
+  *moduleInstance, const emlrtStack *sp, emxArray_creal_T *u0, emxArray_real_T
+  *u1, emxArray_real_T *u2)
 {
   emlrtStack st;
   int32_T u0_idx_0;
-  int32_T u1[1];
-  int32_T u2[1];
+  int32_T u1_idx_0;
+  int32_T u2_idx_0;
   emxArray_creal_T b_u0;
   int32_T c_u0[1];
+  emxArray_real_T b_u1;
+  int32_T c_u1[1];
+  emxArray_real_T b_u2;
+  int32_T c_u2[1];
   st.prev = sp;
   st.tls = sp->tls;
   if (!moduleInstance->sysobj_not_empty) {
@@ -663,14 +677,22 @@ static void mw__internal__call__setup(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl
   }
 
   u0_idx_0 = u0->size[0];
-  u1[0] = u1_size[0];
-  u2[0] = u2_size[0];
+  u1_idx_0 = u1->size[0];
+  u2_idx_0 = u2->size[0];
   b_u0 = *u0;
   c_u0[0] = u0_idx_0;
   b_u0.size = &c_u0[0];
   b_u0.numDimensions = 1;
+  b_u1 = *u1;
+  c_u1[0] = u1_idx_0;
+  b_u1.size = &c_u1[0];
+  b_u1.numDimensions = 1;
+  b_u2 = *u2;
+  c_u2[0] = u2_idx_0;
+  b_u2.size = &c_u2[0];
+  b_u2.numDimensions = 1;
   st.site = &h_emlrtRSI;
-  SystemCore_setup(&st, &moduleInstance->sysobj, &b_u0, u1, u2);
+  SystemCore_setup(&st, &moduleInstance->sysobj, &b_u0, &b_u1, &b_u2);
 }
 
 static comm_internal_examples_FrameSynchronizer
@@ -699,7 +721,7 @@ static comm_internal_examples_FrameSynchronizer
 
 static void SystemCore_setup(const emlrtStack *sp,
   comm_internal_examples_FrameSynchronizer *obj, emxArray_creal_T *varargin_1,
-  int32_T varargin_2_size[1], int32_T varargin_3_size[1])
+  emxArray_real_T *varargin_2, emxArray_real_T *varargin_3)
 {
   emlrtStack st;
   char_T b_u[51];
@@ -760,9 +782,9 @@ static void SystemCore_setup(const emlrtStack *sp,
   st.site = &d_emlrtRSI;
   varSizes[0].f1[0] = (uint32_T)varargin_1->size[0];
   varSizes[0].f1[1] = 1U;
-  varSizes[1].f1[0] = (uint32_T)varargin_2_size[0];
+  varSizes[1].f1[0] = (uint32_T)varargin_2->size[0];
   varSizes[1].f1[1] = 1U;
-  varSizes[2].f1[0] = (uint32_T)varargin_3_size[0];
+  varSizes[2].f1[0] = (uint32_T)varargin_3->size[0];
   varSizes[2].f1[1] = 1U;
   for (i = 0; i < 6; i++) {
     varSizes[0].f1[i + 2] = 1U;
@@ -775,7 +797,7 @@ static void SystemCore_setup(const emlrtStack *sp,
   }
 
   st.site = &d_emlrtRSI;
-  for (i = 0; i < 28065; i++) {
+  for (i = 0; i < 56130; i++) {
     obj->pBuffer[i].re = 0.0;
     obj->pBuffer[i].im = 0.0;
   }
@@ -784,7 +806,7 @@ static void SystemCore_setup(const emlrtStack *sp,
   obj->isSetupComplete = true;
 }
 
-static void mw__internal__call__reset(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl
+static void mw__internal__call__reset(InstanceStruct_UxOvoSHoDqYMTVOX24wWpF
   *moduleInstance, const emlrtStack *sp)
 {
   emlrtStack st;
@@ -866,17 +888,20 @@ static void mw__internal__call__reset(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl
   }
 }
 
-static void mw__internal__call__step(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl
-  *moduleInstance, const emlrtStack *sp, emxArray_creal_T *u0, real_T b_u1_data[],
-  int32_T u1_size[2], real_T b_u2_data[], int32_T u2_size[2], creal_T c_y0[5613],
-  boolean_T *c_y1)
+static void mw__internal__call__step(InstanceStruct_UxOvoSHoDqYMTVOX24wWpF
+  *moduleInstance, const emlrtStack *sp, emxArray_creal_T *u0, emxArray_real_T
+  *u1, emxArray_real_T *u2, creal_T c_y0[11226], boolean_T *c_y1)
 {
   emlrtStack st;
   int32_T u0_idx_0;
-  int32_T u1[1];
-  int32_T u2[1];
+  int32_T u1_idx_0;
+  int32_T u2_idx_0;
   emxArray_creal_T b_u0;
   int32_T c_u0[1];
+  emxArray_real_T b_u1;
+  int32_T c_u1[1];
+  emxArray_real_T b_u2;
+  int32_T c_u2[1];
   boolean_T b;
   st.prev = sp;
   st.tls = sp->tls;
@@ -887,23 +912,29 @@ static void mw__internal__call__step(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl
   }
 
   u0_idx_0 = u0->size[0];
-  u1[0] = u1_size[0];
-  u2[0] = u2_size[0];
+  u1_idx_0 = u1->size[0];
+  u2_idx_0 = u2->size[0];
   b_u0 = *u0;
   c_u0[0] = u0_idx_0;
   b_u0.size = &c_u0[0];
   b_u0.numDimensions = 1;
+  b_u1 = *u1;
+  c_u1[0] = u1_idx_0;
+  b_u1.size = &c_u1[0];
+  b_u1.numDimensions = 1;
+  b_u2 = *u2;
+  c_u2[0] = u2_idx_0;
+  b_u2.size = &c_u2[0];
+  b_u2.numDimensions = 1;
   st.site = &j_emlrtRSI;
-  SystemCore_step(moduleInstance, &st, &moduleInstance->sysobj, &b_u0, b_u1_data,
-                  u1, b_u2_data, u2, c_y0, &b);
+  SystemCore_step(&st, &moduleInstance->sysobj, &b_u0, &b_u1, &b_u2, c_y0, &b);
   *c_y1 = b;
 }
 
-static void SystemCore_step(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl *moduleInstance,
-  const emlrtStack *sp, comm_internal_examples_FrameSynchronizer *obj,
-  emxArray_creal_T *varargin_1, real_T varargin_2_data[], int32_T
-  varargin_2_size[1], real_T b_varargin_3_data[], int32_T varargin_3_size[1],
-  creal_T varargout_1[5613], boolean_T *varargout_2)
+static void SystemCore_step(const emlrtStack *sp,
+  comm_internal_examples_FrameSynchronizer *obj, emxArray_creal_T *varargin_1,
+  emxArray_real_T *varargin_2, emxArray_real_T *varargin_3, creal_T varargout_1
+  [11226], boolean_T *varargout_2)
 {
   emlrtStack st;
   static char_T cv[45] = { 'M', 'A', 'T', 'L', 'A', 'B', ':', 's', 'y', 's', 't',
@@ -925,39 +956,35 @@ static void SystemCore_step(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl *moduleInstance
 
   if (obj->isInitialized != 1) {
     st.site = &d_emlrtRSI;
-    SystemCore_setupAndReset(&st, obj, varargin_1, varargin_2_size,
-      varargin_3_size);
+    SystemCore_setupAndReset(&st, obj, varargin_1, varargin_2, varargin_3);
   }
 
   st.site = &d_emlrtRSI;
-  SystemCore_systemblock_prestep(&st, obj, varargin_1, varargin_2_data,
-    varargin_2_size, b_varargin_3_data, varargin_3_size);
+  SystemCore_systemblock_prestep(&st, obj, varargin_1, varargin_2, varargin_3);
   st.site = &d_emlrtRSI;
   anyInputSizeChanged = SystemCore_detectInputSizeChange(obj, varargin_1,
-    varargin_2_size, varargin_3_size);
+    varargin_2, varargin_3);
   if (anyInputSizeChanged) {
     st.site = &d_emlrtRSI;
-    FrameSynchronizer_validateInputsImpl(&st, varargin_1, varargin_2_data,
-      varargin_2_size, b_varargin_3_data, varargin_3_size);
+    FrameSynchronizer_validateInputsImpl(&st, varargin_1, varargin_2, varargin_3);
   }
 
   st.site = &d_emlrtRSI;
-  FrameSynchronizer_stepImpl(moduleInstance, &st, obj, varargin_1,
-    varargin_2_data, varargin_2_size, b_varargin_3_data, varargin_3_size,
+  FrameSynchronizer_stepImpl(&st, obj, varargin_1, varargin_2, varargin_3,
     varargout_1, &anyInputSizeChanged);
   *varargout_2 = anyInputSizeChanged;
 }
 
 static void SystemCore_setupAndReset(const emlrtStack *sp,
   comm_internal_examples_FrameSynchronizer *obj, emxArray_creal_T *varargin_1,
-  int32_T varargin_2_size[1], int32_T varargin_3_size[1])
+  emxArray_real_T *varargin_2, emxArray_real_T *varargin_3)
 {
   emlrtStack st;
   int32_T i;
   st.prev = sp;
   st.tls = sp->tls;
   st.site = &d_emlrtRSI;
-  SystemCore_setup(&st, obj, varargin_1, varargin_2_size, varargin_3_size);
+  SystemCore_setup(&st, obj, varargin_1, varargin_2, varargin_3);
   st.site = &d_emlrtRSI;
   obj->pNBuffer = 0.0;
   obj->pBufferStartIdx = 0.0;
@@ -972,8 +999,7 @@ static void SystemCore_setupAndReset(const emlrtStack *sp,
 
 static void SystemCore_systemblock_prestep(const emlrtStack *sp,
   comm_internal_examples_FrameSynchronizer *obj, emxArray_creal_T *varargin_1,
-  real_T varargin_2_data[], int32_T varargin_2_size[1], real_T
-  b_varargin_3_data[], int32_T varargin_3_size[1])
+  emxArray_real_T *varargin_2, emxArray_real_T *varargin_3)
 {
   emlrtStack st;
   cell_wrap varSizes[3];
@@ -985,9 +1011,9 @@ static void SystemCore_systemblock_prestep(const emlrtStack *sp,
     st.site = &d_emlrtRSI;
     varSizes[0].f1[0] = (uint32_T)varargin_1->size[0];
     varSizes[0].f1[1] = 1U;
-    varSizes[1].f1[0] = (uint32_T)varargin_2_size[0];
+    varSizes[1].f1[0] = (uint32_T)varargin_2->size[0];
     varSizes[1].f1[1] = 1U;
-    varSizes[2].f1[0] = (uint32_T)varargin_3_size[0];
+    varSizes[2].f1[0] = (uint32_T)varargin_3->size[0];
     varSizes[2].f1[1] = 1U;
     for (i = 0; i < 6; i++) {
       varSizes[0].f1[i + 2] = 1U;
@@ -1000,14 +1026,13 @@ static void SystemCore_systemblock_prestep(const emlrtStack *sp,
     }
 
     st.site = &d_emlrtRSI;
-    FrameSynchronizer_validateInputsImpl(&st, varargin_1, varargin_2_data,
-      varargin_2_size, b_varargin_3_data, varargin_3_size);
+    FrameSynchronizer_validateInputsImpl(&st, varargin_1, varargin_2, varargin_3);
   }
 }
 
 static void FrameSynchronizer_validateInputsImpl(const emlrtStack *sp,
-  emxArray_creal_T *varargin_1, real_T varargin_2_data[], int32_T
-  varargin_2_size[1], real_T b_varargin_3_data[], int32_T varargin_3_size[1])
+  emxArray_creal_T *varargin_1, emxArray_real_T *varargin_2, emxArray_real_T
+  *varargin_3)
 {
   emlrtStack st;
   emlrtStack b_st;
@@ -1124,7 +1149,7 @@ static void FrameSynchronizer_validateInputsImpl(const emlrtStack *sp,
 
   st.site = &l_emlrtRSI;
   b_st.site = &n_emlrtRSI;
-  p = all(varargin_2_data, varargin_2_size);
+  p = all(varargin_2);
   if (!p) {
     memcpy(&b_u[0], &d_u[0], 68U * sizeof(char_T));
     y = NULL;
@@ -1154,7 +1179,7 @@ static void FrameSynchronizer_validateInputsImpl(const emlrtStack *sp,
 
   st.site = &m_emlrtRSI;
   b_st.site = &n_emlrtRSI;
-  p = all(b_varargin_3_data, varargin_3_size);
+  p = all(varargin_3);
   if (!p) {
     memcpy(&f_u[0], &h_u[0], 79U * sizeof(char_T));
     y = NULL;
@@ -1183,7 +1208,7 @@ static void FrameSynchronizer_validateInputsImpl(const emlrtStack *sp,
   }
 }
 
-static boolean_T all(real_T a_data[], int32_T a_size[1])
+static boolean_T all(emxArray_real_T *a)
 {
   boolean_T p;
   int32_T k;
@@ -1191,8 +1216,8 @@ static boolean_T all(real_T a_data[], int32_T a_size[1])
   p = true;
   k = 0;
   exitg1 = false;
-  while ((!exitg1) && (k <= a_size[0] - 1)) {
-    if ((!muDoubleScalarIsInf(a_data[k])) && (!muDoubleScalarIsNaN(a_data[k])))
+  while ((!exitg1) && (k <= a->size[0] - 1)) {
+    if ((!muDoubleScalarIsInf(a->data[k])) && (!muDoubleScalarIsNaN(a->data[k])))
     {
       k++;
     } else {
@@ -1206,7 +1231,7 @@ static boolean_T all(real_T a_data[], int32_T a_size[1])
 
 static boolean_T SystemCore_detectInputSizeChange
   (comm_internal_examples_FrameSynchronizer *obj, emxArray_creal_T *varargin_1,
-   int32_T varargin_2_size[1], int32_T varargin_3_size[1])
+   emxArray_real_T *varargin_2, emxArray_real_T *varargin_3)
 {
   boolean_T anyInputSizeChanged;
   int16_T inSize[8];
@@ -1234,7 +1259,7 @@ static boolean_T SystemCore_detectInputSizeChange
     }
   }
 
-  inSize[0] = (int16_T)varargin_2_size[0];
+  inSize[0] = (int16_T)varargin_2->size[0];
   inSize[1] = 1;
   for (k = 0; k < 6; k++) {
     inSize[k + 2] = 1;
@@ -1255,7 +1280,7 @@ static boolean_T SystemCore_detectInputSizeChange
     }
   }
 
-  inSize[0] = (int16_T)varargin_3_size[0];
+  inSize[0] = (int16_T)varargin_3->size[0];
   inSize[1] = 1;
   for (k = 0; k < 6; k++) {
     inSize[k + 2] = 1;
@@ -1279,84 +1304,93 @@ static boolean_T SystemCore_detectInputSizeChange
   return anyInputSizeChanged;
 }
 
-static void FrameSynchronizer_stepImpl(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl
-  *moduleInstance, const emlrtStack *sp,
+static void FrameSynchronizer_stepImpl(const emlrtStack *sp,
   comm_internal_examples_FrameSynchronizer *obj, emxArray_creal_T *varargin_1,
-  real_T varargin_2_data[], int32_T varargin_2_size[1], real_T
-  b_varargin_3_data[], int32_T varargin_3_size[1], creal_T y[5613], boolean_T
-  *validFrm)
+  emxArray_real_T *varargin_2, emxArray_real_T *varargin_3, creal_T y[11226],
+  boolean_T *validFrm)
 {
   emlrtStack st;
   emlrtStack b_st;
   real_T bestIdx_data[1];
+  int32_T b_varargin_3;
   int32_T loop_ub;
-  int32_T i;
   int32_T bestIdx_size[1];
+  int32_T i;
+  emxArray_real_T *c_varargin_3;
+  real_T ex;
   int32_T i1;
   boolean_T b;
-  int32_T b_varargin_3_size[1];
-  real_T ex;
   st.prev = sp;
   st.tls = sp->tls;
   st.site = &o_emlrtRSI;
   b_st.prev = &st;
   b_st.tls = st.tls;
-  if (varargin_2_size[0] != 0) {
-    loop_ub = varargin_2_size[0];
+  if (varargin_2->size[0] != 0) {
+    b_varargin_3 = varargin_3->size[0];
+    loop_ub = varargin_2->size[0];
     for (i = 0; i < loop_ub; i++) {
-      i1 = (int32_T)emlrtIntegerCheckR2012b(varargin_2_data[i], &emlrtDCI, &st);
-      emlrtDynamicBoundsCheckR2012b(i1, 1, varargin_3_size[0], &emlrtBCI, &st);
+      ex = varargin_2->data[i];
+      i1 = (int32_T)emlrtIntegerCheckR2012b(ex, &emlrtDCI, &st);
+      emlrtDynamicBoundsCheckR2012b(i1, 1, b_varargin_3, &emlrtBCI, &st);
     }
 
-    b_varargin_3_size[0] = varargin_2_size[0];
-    loop_ub = varargin_2_size[0];
+    emxInit_real_T1(&c_varargin_3, 1);
+    i = c_varargin_3->size[0];
+    c_varargin_3->size[0] = varargin_2->size[0];
+    emxEnsureCapacity_real_T1(c_varargin_3, i);
+    loop_ub = varargin_2->size[0];
     for (i = 0; i < loop_ub; i++) {
-      moduleInstance->varargin_3_data[i] = b_varargin_3_data[(int32_T)
-        varargin_2_data[i] - 1];
+      c_varargin_3->data[i] = varargin_3->data[(int32_T)varargin_2->data[i] - 1];
     }
 
     b_st.site = &q_emlrtRSI;
-    maximum(moduleInstance->varargin_3_data, b_varargin_3_size, &ex, &loop_ub);
+    maximum(c_varargin_3, &ex, &loop_ub);
     bestIdx_size[0] = 1;
-    bestIdx_data[0] = varargin_2_data[emlrtDynamicBoundsCheckR2012b(loop_ub, 1,
-      varargin_2_size[0], &b_emlrtBCI, &st) - 1];
+    i = varargin_2->size[0];
+    bestIdx_data[0] = varargin_2->data[emlrtDynamicBoundsCheckR2012b(loop_ub, 1,
+      i, &b_emlrtBCI, &st) - 1];
+    emxFree_real_T(&c_varargin_3);
   } else {
-    bestIdx_size[0] = 0;
+    bestIdx_size[0] = varargin_2->size[0];
+    loop_ub = varargin_2->size[0];
+    for (i = 0; i < loop_ub; i++) {
+      bestIdx_data[i] = varargin_2->data[i];
+    }
   }
 
   b_st.site = &p_emlrtRSI;
-  FrameSynchronizer_stepBitInput(moduleInstance, &b_st, obj, varargin_1,
-    bestIdx_data, bestIdx_size, y, &b);
+  FrameSynchronizer_stepBitInput(&b_st, obj, varargin_1, bestIdx_data,
+    bestIdx_size, y, &b);
   *validFrm = b;
 }
 
-static void maximum(real_T x_data[], int32_T x_size[1], real_T *ex, int32_T *idx)
+static void maximum(emxArray_real_T *x, real_T *ex, int32_T *idx)
 {
   int32_T n;
   int32_T k;
   boolean_T exitg1;
-  n = x_size[0];
-  if (x_size[0] <= 2) {
-    if (x_size[0] == 1) {
-      *ex = x_data[0];
+  n = x->size[0];
+  if (x->size[0] <= 2) {
+    if (x->size[0] == 1) {
+      *ex = x->data[0];
       *idx = 1;
-    } else if ((x_data[0] < x_data[1]) || (muDoubleScalarIsNaN(x_data[0]) &&
-                (!muDoubleScalarIsNaN(x_data[1])))) {
-      *ex = x_data[1];
+    } else if ((x->data[0] < x->data[1]) || (muDoubleScalarIsNaN(x->data[0]) &&
+                (!muDoubleScalarIsNaN(x->data[1])))) {
+      *ex = x->data[1];
       *idx = 2;
     } else {
-      *ex = x_data[0];
+      *ex = x->data[0];
       *idx = 1;
     }
   } else {
-    if (!muDoubleScalarIsNaN(x_data[0])) {
+    if (!muDoubleScalarIsNaN(x->data[0])) {
       *idx = 1;
     } else {
       *idx = 0;
       k = 2;
       exitg1 = false;
-      while ((!exitg1) && (k <= x_size[0])) {
-        if (!muDoubleScalarIsNaN(x_data[k - 1])) {
+      while ((!exitg1) && (k <= x->size[0])) {
+        if (!muDoubleScalarIsNaN(x->data[k - 1])) {
           *idx = k;
           exitg1 = true;
         } else {
@@ -1366,13 +1400,13 @@ static void maximum(real_T x_data[], int32_T x_size[1], real_T *ex, int32_T *idx
     }
 
     if (*idx == 0) {
-      *ex = x_data[0];
+      *ex = x->data[0];
       *idx = 1;
     } else {
-      *ex = x_data[*idx - 1];
+      *ex = x->data[*idx - 1];
       for (k = *idx + 1; k <= n; k++) {
-        if (*ex < x_data[k - 1]) {
-          *ex = x_data[k - 1];
+        if (*ex < x->data[k - 1]) {
+          *ex = x->data[k - 1];
           *idx = k;
         }
       }
@@ -1380,76 +1414,93 @@ static void maximum(real_T x_data[], int32_T x_size[1], real_T *ex, int32_T *idx
   }
 }
 
-static void FrameSynchronizer_stepBitInput(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl *
-  moduleInstance, const emlrtStack *sp, comm_internal_examples_FrameSynchronizer
-  *obj, emxArray_creal_T *x, real_T idx_data[], int32_T idx_size[1], creal_T y
-  [5613], boolean_T *validFrm)
+static void FrameSynchronizer_stepBitInput(const emlrtStack *sp,
+  comm_internal_examples_FrameSynchronizer *obj, emxArray_creal_T *x, real_T
+  idx_data[], int32_T idx_size[1], creal_T y[11226], boolean_T *validFrm)
 {
   emlrtStack st;
   boolean_T b;
   st.prev = sp;
   st.tls = sp->tls;
   st.site = &r_emlrtRSI;
-  FrameSynchronizer_setBuffer(moduleInstance, &st, obj, x, idx_data, idx_size);
+  FrameSynchronizer_setBuffer(&st, obj, x, idx_data, idx_size);
   st.site = &s_emlrtRSI;
   FrameSynchronizer_getBuffer(&st, obj, y, &b);
   *validFrm = b;
 }
 
-static void FrameSynchronizer_setBuffer(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl
-  *moduleInstance, const emlrtStack *sp,
+static void FrameSynchronizer_setBuffer(const emlrtStack *sp,
   comm_internal_examples_FrameSynchronizer *obj, emxArray_creal_T *x, real_T
   preambleEndIdx_data[], int32_T preambleEndIdx_size[1])
 {
+  emxArray_real_T *circularIdx;
   int32_T i;
-  int32_T circularIdx_size[2];
-  int32_T loop_ub;
-  real_T linearIdx_data[6175];
-  real_T prbStartIdx;
-  real_T b_linearIdx_data[6175];
-  int32_T linearIdx_size[2];
-  int16_T tmp_data[6175];
-  int32_T iv[1];
   int32_T i1;
+  int32_T loop_ub;
+  emxArray_real_T *linearIdx;
+  real_T prbStartIdx;
+  emxArray_real_T *b_linearIdx;
+  uint16_T tmp_data[12349];
+  int32_T tmp_size_idx_0;
+  int32_T iv[1];
   real_T oldNBuffer;
   real_T linIdx;
+  int32_T i2;
   if (x->size[0] != 0) {
+    emxInit_real_T(&circularIdx, 2);
     i = x->size[0];
-    circularIdx_size[1] = (int32_T)((real_T)i - 1.0) + 1;
+    i1 = circularIdx->size[0] * circularIdx->size[1];
+    circularIdx->size[0] = 1;
+    circularIdx->size[1] = (int32_T)((real_T)i - 1.0) + 1;
+    emxEnsureCapacity_real_T(circularIdx, i1);
     loop_ub = (int32_T)((real_T)i - 1.0);
     for (i = 0; i <= loop_ub; i++) {
-      moduleInstance->circularIdx_data[i] = (real_T)i + 1.0;
+      circularIdx->data[i] = (real_T)i + 1.0;
     }
 
-    loop_ub = circularIdx_size[1] - 1;
+    emxInit_real_T(&linearIdx, 2);
+    i = linearIdx->size[0] * linearIdx->size[1];
+    linearIdx->size[0] = 1;
+    linearIdx->size[1] = circularIdx->size[1];
+    emxEnsureCapacity_real_T(linearIdx, i);
+    loop_ub = circularIdx->size[1] - 1;
     prbStartIdx = obj->pBufferStartIdx + obj->pNBuffer;
     for (i = 0; i <= loop_ub; i++) {
-      linearIdx_data[i] = prbStartIdx + moduleInstance->circularIdx_data[i];
+      linearIdx->data[i] = prbStartIdx + circularIdx->data[i];
     }
 
-    linearIdx_size[0] = 1;
-    linearIdx_size[1] = circularIdx_size[1];
-    loop_ub = circularIdx_size[1];
+    emxInit_real_T(&b_linearIdx, 2);
+    i = b_linearIdx->size[0] * b_linearIdx->size[1];
+    b_linearIdx->size[0] = 1;
+    b_linearIdx->size[1] = linearIdx->size[1];
+    emxEnsureCapacity_real_T(b_linearIdx, i);
+    loop_ub = linearIdx->size[0] * linearIdx->size[1];
     for (i = 0; i < loop_ub; i++) {
-      b_linearIdx_data[i] = linearIdx_data[i] - 1.0;
+      b_linearIdx->data[i] = linearIdx->data[i] - 1.0;
     }
 
-    b_mod(b_linearIdx_data, linearIdx_size, moduleInstance->circularIdx_data,
-          circularIdx_size);
-    loop_ub = circularIdx_size[0] * circularIdx_size[1] - 1;
+    emxFree_real_T(&linearIdx);
+    b_mod(b_linearIdx, circularIdx);
+    i = circularIdx->size[0] * circularIdx->size[1];
+    i1 = circularIdx->size[0] * circularIdx->size[1];
+    circularIdx->size[0] = 1;
+    emxEnsureCapacity_real_T(circularIdx, i1);
+    loop_ub = i - 1;
+    emxFree_real_T(&b_linearIdx);
     for (i = 0; i <= loop_ub; i++) {
-      moduleInstance->circularIdx_data[i]++;
+      circularIdx->data[i]++;
     }
 
-    loop_ub = circularIdx_size[1];
+    tmp_size_idx_0 = circularIdx->size[1];
+    loop_ub = circularIdx->size[1];
     for (i = 0; i < loop_ub; i++) {
-      i1 = (int16_T)emlrtIntegerCheckR2012b(moduleInstance->circularIdx_data[i],
-        &c_emlrtDCI, sp);
-      tmp_data[i] = (int16_T)((int16_T)emlrtDynamicBoundsCheckR2012b(i1, 1,
-        28065, &d_emlrtBCI, sp) - 1);
+      prbStartIdx = circularIdx->data[i];
+      i1 = (uint16_T)emlrtIntegerCheckR2012b(prbStartIdx, &c_emlrtDCI, sp);
+      tmp_data[i] = (uint16_T)((uint32_T)(uint16_T)emlrtDynamicBoundsCheckR2012b
+        (i1, 1, 56130, &d_emlrtBCI, sp) - 1U);
     }
 
-    iv[0] = circularIdx_size[1];
+    iv[0] = tmp_size_idx_0;
     emlrtSubAssignSizeCheckR2012b(iv, 1, *(int32_T (*)[1])x->size, 1, &emlrtECI,
       sp);
     loop_ub = x->size[0];
@@ -1460,14 +1511,16 @@ static void FrameSynchronizer_setBuffer(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl
 
     oldNBuffer = obj->pNBuffer;
     obj->pNBuffer += (real_T)x->size[0];
-    obj->pBufferEndIdx = moduleInstance->
-      circularIdx_data[emlrtDynamicBoundsCheckR2012b(circularIdx_size[1], 1,
-      circularIdx_size[1], &e_emlrtBCI, sp) - 1];
-    if (obj->pNBuffer > 28065.0) {
-      obj->pNBuffer = 28065.0;
-      obj->pBufferStartIdx = moduleInstance->
-        circularIdx_data[emlrtDynamicBoundsCheckR2012b(circularIdx_size[1], 1,
-        circularIdx_size[1], &f_emlrtBCI, sp) - 1];
+    i = circularIdx->size[1];
+    i1 = circularIdx->size[1];
+    obj->pBufferEndIdx = circularIdx->data[emlrtDynamicBoundsCheckR2012b(i1, 1,
+      i, &e_emlrtBCI, sp) - 1];
+    if (obj->pNBuffer > 56130.0) {
+      obj->pNBuffer = 56130.0;
+      i = circularIdx->size[1];
+      i1 = circularIdx->size[1];
+      obj->pBufferStartIdx = circularIdx->data[emlrtDynamicBoundsCheckR2012b(i1,
+        1, i, &f_emlrtBCI, sp) - 1];
       prbStartIdx = obj->pNPrbIdxBuffer;
       i = (int32_T)(((-1.0 - prbStartIdx) + 1.0) / -1.0);
       emlrtForLoopVectorCheckR2012b(prbStartIdx, -1.0, 1.0, mxDOUBLE_CLASS, i,
@@ -1477,16 +1530,19 @@ static void FrameSynchronizer_setBuffer(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl
           loop_ub);
         linIdx = c_mod(linIdx - 1.0) + 1.0;
         i1 = (int32_T)emlrtIntegerCheckR2012b(linIdx, &d_emlrtDCI, sp);
+        tmp_size_idx_0 = circularIdx->size[1];
+        i2 = circularIdx->size[1];
         if (obj->pPrbIdxBuffer[emlrtDynamicBoundsCheckR2012b(i1, 1, 5,
-             &g_emlrtBCI, sp) - 1] <= moduleInstance->
-            circularIdx_data[emlrtDynamicBoundsCheckR2012b(circularIdx_size[1],
-             1, circularIdx_size[1], &h_emlrtBCI, sp) - 1]) {
+             &g_emlrtBCI, sp) - 1] <= circularIdx->
+            data[emlrtDynamicBoundsCheckR2012b(i2, 1, tmp_size_idx_0,
+             &h_emlrtBCI, sp) - 1]) {
           obj->pPrbIdxBuffer[(int32_T)linIdx - 1] = 0.0;
           obj->pNPrbIdxBuffer--;
         }
       }
     }
 
+    emxFree_real_T(&circularIdx);
     if (preambleEndIdx_size[0] != 0) {
       prbStartIdx = preambleEndIdx_data[0] - obj->pPrbLenOffset;
       prbStartIdx += obj->pBufferStartIdx + oldNBuffer;
@@ -1506,28 +1562,40 @@ static void FrameSynchronizer_setBuffer(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl
   }
 }
 
-static void b_mod(real_T x_data[], int32_T x_size[2], real_T r_data[], int32_T
-                  r_size[2])
+static void b_mod(emxArray_real_T *x, emxArray_real_T *r)
 {
-  real_T z1_data[6175];
+  emxArray_real_T *z1;
   int32_T nx;
-  int32_T k;
-  if (0 <= (int16_T)x_size[1] - 1) {
-    memcpy(&z1_data[0], &r_data[0], (uint32_T)((int16_T)x_size[1] * (int32_T)
-            sizeof(real_T)));
+  int32_T loop_ub;
+  emxInit_real_T(&z1, 2);
+  nx = r->size[0] * r->size[1];
+  r->size[0] = 1;
+  r->size[1] = (int16_T)x->size[1];
+  emxEnsureCapacity_real_T(r, nx);
+  nx = z1->size[0] * z1->size[1];
+  z1->size[0] = 1;
+  z1->size[1] = r->size[1];
+  emxEnsureCapacity_real_T(z1, nx);
+  loop_ub = r->size[1] - 1;
+  for (nx = 0; nx <= loop_ub; nx++) {
+    z1->data[nx] = r->data[nx];
   }
 
-  nx = (int16_T)x_size[1] - 1;
-  for (k = 0; k <= nx; k++) {
-    z1_data[k] = floatmod(x_data[k]);
+  nx = (int16_T)x->size[1] - 1;
+  for (loop_ub = 0; loop_ub <= nx; loop_ub++) {
+    z1->data[loop_ub] = floatmod(x->data[loop_ub]);
   }
 
-  r_size[0] = 1;
-  r_size[1] = (int16_T)x_size[1];
-  if (0 <= (int16_T)x_size[1] - 1) {
-    memcpy(&r_data[0], &z1_data[0], (uint32_T)((int16_T)x_size[1] * (int32_T)
-            sizeof(real_T)));
+  nx = r->size[0] * r->size[1];
+  r->size[0] = 1;
+  r->size[1] = z1->size[1];
+  emxEnsureCapacity_real_T(r, nx);
+  loop_ub = z1->size[1] - 1;
+  for (nx = 0; nx <= loop_ub; nx++) {
+    r->data[nx] = z1->data[nx];
   }
+
+  emxFree_real_T(&z1);
 }
 
 static real_T floatmod(real_T x)
@@ -1538,12 +1606,12 @@ static real_T floatmod(real_T x)
   } else if (x == 0.0) {
     r = 0.0;
   } else {
-    r = muDoubleScalarRem(x, 28065.0);
+    r = muDoubleScalarRem(x, 56130.0);
     if (r == 0.0) {
       r = 0.0;
     } else {
       if (x < 0.0) {
-        r += 28065.0;
+        r += 56130.0;
       }
     }
   }
@@ -1573,16 +1641,16 @@ static real_T c_mod(real_T x)
 }
 
 static void FrameSynchronizer_getBuffer(const emlrtStack *sp,
-  comm_internal_examples_FrameSynchronizer *obj, creal_T y[5613], boolean_T
+  comm_internal_examples_FrameSynchronizer *obj, creal_T y[11226], boolean_T
   *validFrm)
 {
   int32_T i;
   real_T nValid;
   real_T b_obj;
-  real_T linearIdx[5613];
-  real_T b_linearIdx[5613];
+  real_T linearIdx[11226];
+  real_T b_linearIdx[11226];
   int32_T b_i;
-  for (i = 0; i < 5613; i++) {
+  for (i = 0; i < 11226; i++) {
     y[i].re = 0.0;
     y[i].im = 0.0;
   }
@@ -1602,27 +1670,27 @@ static void FrameSynchronizer_getBuffer(const emlrtStack *sp,
         1] - obj->pBufferStartIdx) - 1.0);
     }
 
-    if (nValid >= 5613.0) {
+    if (nValid >= 11226.0) {
       nValid = obj->pNBuffer - nValid;
       i = (int32_T)emlrtIntegerCheckR2012b(obj->pPrbIdxBufferStartIdx,
         &h_emlrtDCI, sp);
       b_obj = obj->pPrbIdxBuffer[emlrtDynamicBoundsCheckR2012b(i, 1, 5,
         &l_emlrtBCI, sp) - 1];
-      for (i = 0; i < 5613; i++) {
+      for (i = 0; i < 11226; i++) {
         b_linearIdx[i] = (b_obj + (real_T)i) - 1.0;
       }
 
       d_mod(b_linearIdx, linearIdx);
-      for (i = 0; i < 5613; i++) {
+      for (i = 0; i < 11226; i++) {
         linearIdx[i]++;
       }
 
-      for (i = 0; i < 5613; i++) {
+      for (i = 0; i < 11226; i++) {
         b_i = (int32_T)emlrtIntegerCheckR2012b(linearIdx[i], &i_emlrtDCI, sp);
-        y[i].re = obj->pBuffer[emlrtDynamicBoundsCheckR2012b(b_i, 1, 28065,
+        y[i].re = obj->pBuffer[emlrtDynamicBoundsCheckR2012b(b_i, 1, 56130,
           &m_emlrtBCI, sp) - 1].re;
         b_i = (int32_T)emlrtIntegerCheckR2012b(linearIdx[i], &i_emlrtDCI, sp);
-        y[i].im = obj->pBuffer[emlrtDynamicBoundsCheckR2012b(b_i, 1, 28065,
+        y[i].im = obj->pBuffer[emlrtDynamicBoundsCheckR2012b(b_i, 1, 56130,
           &m_emlrtBCI, sp) - 1].im;
       }
 
@@ -1633,16 +1701,16 @@ static void FrameSynchronizer_getBuffer(const emlrtStack *sp,
         - 1] = 0.0;
       obj->pNPrbIdxBuffer--;
       obj->pPrbIdxBufferStartIdx = c_mod(obj->pPrbIdxBufferStartIdx) + 1.0;
-      obj->pBufferStartIdx = linearIdx[5612];
-      obj->pNBuffer = (obj->pNBuffer - 5613.0) - nValid;
+      obj->pBufferStartIdx = linearIdx[11225];
+      obj->pNBuffer = (obj->pNBuffer - 11226.0) - nValid;
     }
   }
 }
 
-static void d_mod(real_T x[5613], real_T r[5613])
+static void d_mod(real_T x[11226], real_T r[11226])
 {
   int32_T k;
-  for (k = 0; k < 5613; k++) {
+  for (k = 0; k < 11226; k++) {
     r[k] = floatmod(x[k]);
   }
 }
@@ -1675,8 +1743,8 @@ static const mxArray *b_emlrt_marshallOut(const emlrtStack *sp, const char_T
   return y;
 }
 
-static const mxArray *c_emlrt_marshallOut(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl
-  *moduleInstance, const emlrtStack *sp)
+static const mxArray *c_emlrt_marshallOut(InstanceStruct_UxOvoSHoDqYMTVOX24wWpF *
+  moduleInstance, const emlrtStack *sp)
 {
   const mxArray *y;
   const mxArray *b_y;
@@ -1702,7 +1770,7 @@ static const mxArray *c_emlrt_marshallOut(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl
 
   uint32_T *pData;
   int32_T b_i;
-  static const int32_T iv2[1] = { 28065 };
+  static const int32_T iv2[1] = { 56130 };
 
   real_T g_u[5];
   static const int32_T iv3[1] = { 5 };
@@ -1765,7 +1833,7 @@ static const mxArray *c_emlrt_marshallOut(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl
   m = emlrtCreateDoubleScalar(f_u);
   emlrtAssign(&c_y, m);
   emlrtSetFieldR2017b(b_y, 0, "pPrbLenOffset", c_y, 5);
-  memcpy(&moduleInstance->u[0], &moduleInstance->sysobj.pBuffer[0], 28065U *
+  memcpy(&moduleInstance->u[0], &moduleInstance->sysobj.pBuffer[0], 56130U *
          sizeof(creal_T));
   c_y = NULL;
   m = emlrtCreateNumericArray(1, &iv2[0], mxDOUBLE_CLASS, mxCOMPLEX);
@@ -1821,7 +1889,7 @@ static const mxArray *c_emlrt_marshallOut(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl
 }
 
 static const mxArray *cgxe_mdl_get_sim_state
-  (InstanceStruct_4DoyfzVWrL7ZTU2c84qGl *moduleInstance)
+  (InstanceStruct_UxOvoSHoDqYMTVOX24wWpF *moduleInstance)
 {
   const mxArray *st;
   emlrtStack b_st = { NULL,            /* site */
@@ -1835,7 +1903,7 @@ static const mxArray *cgxe_mdl_get_sim_state
   return st;
 }
 
-static void emlrt_marshallIn(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl
+static void emlrt_marshallIn(InstanceStruct_UxOvoSHoDqYMTVOX24wWpF
   *moduleInstance, const emlrtStack *sp, const mxArray *b_u)
 {
   emlrtMsgIdentifier thisId;
@@ -1972,7 +2040,7 @@ static real_T h_emlrt_marshallIn(const emlrtStack *sp, const mxArray *b_u, const
 }
 
 static void i_emlrt_marshallIn(const emlrtStack *sp, const mxArray *b_u, const
-  emlrtMsgIdentifier *parentId, creal_T y[28065])
+  emlrtMsgIdentifier *parentId, creal_T y[56130])
 {
   p_emlrt_marshallIn(sp, emlrtAlias(b_u), parentId, y);
   emlrtDestroyArray(&b_u);
@@ -1998,7 +2066,7 @@ static boolean_T k_emlrt_marshallIn(const emlrtStack *sp, const mxArray
   return y;
 }
 
-static void cgxe_mdl_set_sim_state(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl
+static void cgxe_mdl_set_sim_state(InstanceStruct_UxOvoSHoDqYMTVOX24wWpF
   *moduleInstance, const mxArray *st)
 {
   emlrtStack b_st = { NULL,            /* site */
@@ -2090,9 +2158,9 @@ static real_T o_emlrt_marshallIn(const emlrtStack *sp, const mxArray *src, const
 }
 
 static void p_emlrt_marshallIn(const emlrtStack *sp, const mxArray *src, const
-  emlrtMsgIdentifier *msgId, creal_T ret[28065])
+  emlrtMsgIdentifier *msgId, creal_T ret[56130])
 {
-  static const int32_T dims[1] = { 28065 };
+  static const int32_T dims[1] = { 56130 };
 
   emlrtCheckBuiltInR2012b(sp, msgId, src, "double", true, 1U, dims);
   emlrtImportArrayR2015b(sp, src, ret, 8, true);
@@ -2158,6 +2226,48 @@ static void emxEnsureCapacity_creal_T(emxArray_creal_T *emxArray, int32_T
   }
 }
 
+static void emxEnsureCapacity_real_T(emxArray_real_T *emxArray, int32_T oldNumel)
+{
+  int32_T newNumel;
+  int32_T i;
+  void *newData;
+  if (oldNumel < 0) {
+    oldNumel = 0;
+  }
+
+  newNumel = 1;
+  for (i = 0; i < emxArray->numDimensions; i++) {
+    newNumel *= emxArray->size[i];
+  }
+
+  if (newNumel > emxArray->allocatedSize) {
+    i = emxArray->allocatedSize;
+    if (i < 16) {
+      i = 16;
+    }
+
+    while (i < newNumel) {
+      if (i > 1073741823) {
+        i = MAX_int32_T;
+      } else {
+        i <<= 1;
+      }
+    }
+
+    newData = emlrtCallocMex((uint32_T)i, sizeof(real_T));
+    if (emxArray->data != NULL) {
+      memcpy(newData, emxArray->data, sizeof(real_T) * (uint32_T)oldNumel);
+      if (emxArray->canFreeData) {
+        emlrtFreeMex(emxArray->data);
+      }
+    }
+
+    emxArray->data = (real_T *)newData;
+    emxArray->allocatedSize = i;
+    emxArray->canFreeData = true;
+  }
+}
+
 static void emxInit_creal_T(emxArray_creal_T **pEmxArray, int32_T numDimensions)
 {
   emxArray_creal_T *emxArray;
@@ -2165,6 +2275,23 @@ static void emxInit_creal_T(emxArray_creal_T **pEmxArray, int32_T numDimensions)
   *pEmxArray = (emxArray_creal_T *)emlrtMallocMex(sizeof(emxArray_creal_T));
   emxArray = *pEmxArray;
   emxArray->data = (creal_T *)NULL;
+  emxArray->numDimensions = numDimensions;
+  emxArray->size = (int32_T *)emlrtMallocMex(sizeof(int32_T) * (uint32_T)
+    numDimensions);
+  emxArray->allocatedSize = 0;
+  emxArray->canFreeData = true;
+  for (i = 0; i < numDimensions; i++) {
+    emxArray->size[i] = 0;
+  }
+}
+
+static void emxInit_real_T(emxArray_real_T **pEmxArray, int32_T numDimensions)
+{
+  emxArray_real_T *emxArray;
+  int32_T i;
+  *pEmxArray = (emxArray_real_T *)emlrtMallocMex(sizeof(emxArray_real_T));
+  emxArray = *pEmxArray;
+  emxArray->data = (real_T *)NULL;
   emxArray->numDimensions = numDimensions;
   emxArray->size = (int32_T *)emlrtMallocMex(sizeof(int32_T) * (uint32_T)
     numDimensions);
@@ -2188,102 +2315,175 @@ static void emxFree_creal_T(emxArray_creal_T **pEmxArray)
   }
 }
 
-static void init_simulink_io_address(InstanceStruct_4DoyfzVWrL7ZTU2c84qGl
+static void emxFree_real_T(emxArray_real_T **pEmxArray)
+{
+  if (*pEmxArray != (emxArray_real_T *)NULL) {
+    if (((*pEmxArray)->data != (real_T *)NULL) && (*pEmxArray)->canFreeData) {
+      emlrtFreeMex((*pEmxArray)->data);
+    }
+
+    emlrtFreeMex((*pEmxArray)->size);
+    emlrtFreeMex(*pEmxArray);
+    *pEmxArray = (emxArray_real_T *)NULL;
+  }
+}
+
+static void emxEnsureCapacity_real_T1(emxArray_real_T *emxArray, int32_T
+  oldNumel)
+{
+  int32_T newNumel;
+  int32_T i;
+  void *newData;
+  if (oldNumel < 0) {
+    oldNumel = 0;
+  }
+
+  newNumel = 1;
+  for (i = 0; i < emxArray->numDimensions; i++) {
+    newNumel *= emxArray->size[i];
+  }
+
+  if (newNumel > emxArray->allocatedSize) {
+    i = emxArray->allocatedSize;
+    if (i < 16) {
+      i = 16;
+    }
+
+    while (i < newNumel) {
+      if (i > 1073741823) {
+        i = MAX_int32_T;
+      } else {
+        i <<= 1;
+      }
+    }
+
+    newData = emlrtCallocMex((uint32_T)i, sizeof(real_T));
+    if (emxArray->data != NULL) {
+      memcpy(newData, emxArray->data, sizeof(real_T) * (uint32_T)oldNumel);
+      if (emxArray->canFreeData) {
+        emlrtFreeMex(emxArray->data);
+      }
+    }
+
+    emxArray->data = (real_T *)newData;
+    emxArray->allocatedSize = i;
+    emxArray->canFreeData = true;
+  }
+}
+
+static void emxInit_real_T1(emxArray_real_T **pEmxArray, int32_T numDimensions)
+{
+  emxArray_real_T *emxArray;
+  int32_T i;
+  *pEmxArray = (emxArray_real_T *)emlrtMallocMex(sizeof(emxArray_real_T));
+  emxArray = *pEmxArray;
+  emxArray->data = (real_T *)NULL;
+  emxArray->numDimensions = numDimensions;
+  emxArray->size = (int32_T *)emlrtMallocMex(sizeof(int32_T) * (uint32_T)
+    numDimensions);
+  emxArray->allocatedSize = 0;
+  emxArray->canFreeData = true;
+  for (i = 0; i < numDimensions; i++) {
+    emxArray->size[i] = 0;
+  }
+}
+
+static void init_simulink_io_address(InstanceStruct_UxOvoSHoDqYMTVOX24wWpF
   *moduleInstance)
 {
   moduleInstance->emlrtRootTLSGlobal = (void *)cgxertGetEMLRTCtx
     (moduleInstance->S);
-  moduleInstance->u0_data = (creal_T (*)[6175])cgxertGetInputPortSignal
+  moduleInstance->u0_data = (creal_T (*)[12349])cgxertGetInputPortSignal
     (moduleInstance->S, 0);
   moduleInstance->u0_sizes = (int32_T (*)[2])cgxertGetCurrentInputPortDimensions
     (moduleInstance->S, 0);
-  moduleInstance->u1_data = (real_T (*)[6175])cgxertGetInputPortSignal
+  moduleInstance->u1_data = (real_T (*)[12349])cgxertGetInputPortSignal
     (moduleInstance->S, 1);
   moduleInstance->u1_sizes = (int32_T (*)[2])cgxertGetCurrentInputPortDimensions
     (moduleInstance->S, 1);
-  moduleInstance->u2_data = (real_T (*)[6175])cgxertGetInputPortSignal
+  moduleInstance->u2_data = (real_T (*)[12349])cgxertGetInputPortSignal
     (moduleInstance->S, 2);
   moduleInstance->u2_sizes = (int32_T (*)[2])cgxertGetCurrentInputPortDimensions
     (moduleInstance->S, 2);
-  moduleInstance->b_y0 = (creal_T (*)[5613])cgxertGetOutputPortSignal
+  moduleInstance->b_y0 = (creal_T (*)[11226])cgxertGetOutputPortSignal
     (moduleInstance->S, 0);
   moduleInstance->b_y1 = (boolean_T *)cgxertGetOutputPortSignal
     (moduleInstance->S, 1);
 }
 
 /* CGXE Glue Code */
-static void mdlOutputs_4DoyfzVWrL7ZTU2c84qGl(SimStruct *S, int_T tid)
+static void mdlOutputs_UxOvoSHoDqYMTVOX24wWpF(SimStruct *S, int_T tid)
 {
-  InstanceStruct_4DoyfzVWrL7ZTU2c84qGl *moduleInstance =
-    (InstanceStruct_4DoyfzVWrL7ZTU2c84qGl *)cgxertGetRuntimeInstance(S);
+  InstanceStruct_UxOvoSHoDqYMTVOX24wWpF *moduleInstance =
+    (InstanceStruct_UxOvoSHoDqYMTVOX24wWpF *)cgxertGetRuntimeInstance(S);
   cgxe_mdl_outputs(moduleInstance);
 }
 
-static void mdlInitialize_4DoyfzVWrL7ZTU2c84qGl(SimStruct *S)
+static void mdlInitialize_UxOvoSHoDqYMTVOX24wWpF(SimStruct *S)
 {
-  InstanceStruct_4DoyfzVWrL7ZTU2c84qGl *moduleInstance =
-    (InstanceStruct_4DoyfzVWrL7ZTU2c84qGl *)cgxertGetRuntimeInstance(S);
+  InstanceStruct_UxOvoSHoDqYMTVOX24wWpF *moduleInstance =
+    (InstanceStruct_UxOvoSHoDqYMTVOX24wWpF *)cgxertGetRuntimeInstance(S);
   cgxe_mdl_initialize(moduleInstance);
 }
 
-static void mdlUpdate_4DoyfzVWrL7ZTU2c84qGl(SimStruct *S, int_T tid)
+static void mdlUpdate_UxOvoSHoDqYMTVOX24wWpF(SimStruct *S, int_T tid)
 {
-  InstanceStruct_4DoyfzVWrL7ZTU2c84qGl *moduleInstance =
-    (InstanceStruct_4DoyfzVWrL7ZTU2c84qGl *)cgxertGetRuntimeInstance(S);
+  InstanceStruct_UxOvoSHoDqYMTVOX24wWpF *moduleInstance =
+    (InstanceStruct_UxOvoSHoDqYMTVOX24wWpF *)cgxertGetRuntimeInstance(S);
   cgxe_mdl_update(moduleInstance);
 }
 
-static mxArray* getSimState_4DoyfzVWrL7ZTU2c84qGl(SimStruct *S)
+static mxArray* getSimState_UxOvoSHoDqYMTVOX24wWpF(SimStruct *S)
 {
   mxArray* mxSS;
-  InstanceStruct_4DoyfzVWrL7ZTU2c84qGl *moduleInstance =
-    (InstanceStruct_4DoyfzVWrL7ZTU2c84qGl *)cgxertGetRuntimeInstance(S);
+  InstanceStruct_UxOvoSHoDqYMTVOX24wWpF *moduleInstance =
+    (InstanceStruct_UxOvoSHoDqYMTVOX24wWpF *)cgxertGetRuntimeInstance(S);
   mxSS = (mxArray *) cgxe_mdl_get_sim_state(moduleInstance);
   return mxSS;
 }
 
-static void setSimState_4DoyfzVWrL7ZTU2c84qGl(SimStruct *S, const mxArray *ss)
+static void setSimState_UxOvoSHoDqYMTVOX24wWpF(SimStruct *S, const mxArray *ss)
 {
-  InstanceStruct_4DoyfzVWrL7ZTU2c84qGl *moduleInstance =
-    (InstanceStruct_4DoyfzVWrL7ZTU2c84qGl *)cgxertGetRuntimeInstance(S);
+  InstanceStruct_UxOvoSHoDqYMTVOX24wWpF *moduleInstance =
+    (InstanceStruct_UxOvoSHoDqYMTVOX24wWpF *)cgxertGetRuntimeInstance(S);
   cgxe_mdl_set_sim_state(moduleInstance, emlrtAlias(ss));
 }
 
-static void mdlTerminate_4DoyfzVWrL7ZTU2c84qGl(SimStruct *S)
+static void mdlTerminate_UxOvoSHoDqYMTVOX24wWpF(SimStruct *S)
 {
-  InstanceStruct_4DoyfzVWrL7ZTU2c84qGl *moduleInstance =
-    (InstanceStruct_4DoyfzVWrL7ZTU2c84qGl *)cgxertGetRuntimeInstance(S);
+  InstanceStruct_UxOvoSHoDqYMTVOX24wWpF *moduleInstance =
+    (InstanceStruct_UxOvoSHoDqYMTVOX24wWpF *)cgxertGetRuntimeInstance(S);
   cgxe_mdl_terminate(moduleInstance);
   free((void *)moduleInstance);
 }
 
-static void mdlEnable_4DoyfzVWrL7ZTU2c84qGl(SimStruct *S)
+static void mdlEnable_UxOvoSHoDqYMTVOX24wWpF(SimStruct *S)
 {
-  InstanceStruct_4DoyfzVWrL7ZTU2c84qGl *moduleInstance =
-    (InstanceStruct_4DoyfzVWrL7ZTU2c84qGl *)cgxertGetRuntimeInstance(S);
+  InstanceStruct_UxOvoSHoDqYMTVOX24wWpF *moduleInstance =
+    (InstanceStruct_UxOvoSHoDqYMTVOX24wWpF *)cgxertGetRuntimeInstance(S);
   cgxe_mdl_enable(moduleInstance);
 }
 
-static void mdlDisable_4DoyfzVWrL7ZTU2c84qGl(SimStruct *S)
+static void mdlDisable_UxOvoSHoDqYMTVOX24wWpF(SimStruct *S)
 {
-  InstanceStruct_4DoyfzVWrL7ZTU2c84qGl *moduleInstance =
-    (InstanceStruct_4DoyfzVWrL7ZTU2c84qGl *)cgxertGetRuntimeInstance(S);
+  InstanceStruct_UxOvoSHoDqYMTVOX24wWpF *moduleInstance =
+    (InstanceStruct_UxOvoSHoDqYMTVOX24wWpF *)cgxertGetRuntimeInstance(S);
   cgxe_mdl_disable(moduleInstance);
 }
 
-static void mdlStart_4DoyfzVWrL7ZTU2c84qGl(SimStruct *S)
+static void mdlStart_UxOvoSHoDqYMTVOX24wWpF(SimStruct *S)
 {
-  InstanceStruct_4DoyfzVWrL7ZTU2c84qGl *moduleInstance =
-    (InstanceStruct_4DoyfzVWrL7ZTU2c84qGl *)calloc(1, sizeof
-    (InstanceStruct_4DoyfzVWrL7ZTU2c84qGl));
+  InstanceStruct_UxOvoSHoDqYMTVOX24wWpF *moduleInstance =
+    (InstanceStruct_UxOvoSHoDqYMTVOX24wWpF *)calloc(1, sizeof
+    (InstanceStruct_UxOvoSHoDqYMTVOX24wWpF));
   moduleInstance->S = S;
   cgxertSetRuntimeInstance(S, (void *)moduleInstance);
-  ssSetmdlOutputs(S, mdlOutputs_4DoyfzVWrL7ZTU2c84qGl);
-  ssSetmdlInitializeConditions(S, mdlInitialize_4DoyfzVWrL7ZTU2c84qGl);
-  ssSetmdlUpdate(S, mdlUpdate_4DoyfzVWrL7ZTU2c84qGl);
-  ssSetmdlTerminate(S, mdlTerminate_4DoyfzVWrL7ZTU2c84qGl);
-  ssSetmdlEnable(S, mdlEnable_4DoyfzVWrL7ZTU2c84qGl);
-  ssSetmdlDisable(S, mdlDisable_4DoyfzVWrL7ZTU2c84qGl);
+  ssSetmdlOutputs(S, mdlOutputs_UxOvoSHoDqYMTVOX24wWpF);
+  ssSetmdlInitializeConditions(S, mdlInitialize_UxOvoSHoDqYMTVOX24wWpF);
+  ssSetmdlUpdate(S, mdlUpdate_UxOvoSHoDqYMTVOX24wWpF);
+  ssSetmdlTerminate(S, mdlTerminate_UxOvoSHoDqYMTVOX24wWpF);
+  ssSetmdlEnable(S, mdlEnable_UxOvoSHoDqYMTVOX24wWpF);
+  ssSetmdlDisable(S, mdlDisable_UxOvoSHoDqYMTVOX24wWpF);
   cgxe_mdl_start(moduleInstance);
 
   {
@@ -2293,42 +2493,42 @@ static void mdlStart_4DoyfzVWrL7ZTU2c84qGl(SimStruct *S)
   }
 }
 
-static void mdlProcessParameters_4DoyfzVWrL7ZTU2c84qGl(SimStruct *S)
+static void mdlProcessParameters_UxOvoSHoDqYMTVOX24wWpF(SimStruct *S)
 {
 }
 
-void method_dispatcher_4DoyfzVWrL7ZTU2c84qGl(SimStruct *S, int_T method, void
+void method_dispatcher_UxOvoSHoDqYMTVOX24wWpF(SimStruct *S, int_T method, void
   *data)
 {
   switch (method) {
    case SS_CALL_MDL_START:
-    mdlStart_4DoyfzVWrL7ZTU2c84qGl(S);
+    mdlStart_UxOvoSHoDqYMTVOX24wWpF(S);
     break;
 
    case SS_CALL_MDL_PROCESS_PARAMETERS:
-    mdlProcessParameters_4DoyfzVWrL7ZTU2c84qGl(S);
+    mdlProcessParameters_UxOvoSHoDqYMTVOX24wWpF(S);
     break;
 
    case SS_CALL_MDL_GET_SIM_STATE:
-    *((mxArray**) data) = getSimState_4DoyfzVWrL7ZTU2c84qGl(S);
+    *((mxArray**) data) = getSimState_UxOvoSHoDqYMTVOX24wWpF(S);
     break;
 
    case SS_CALL_MDL_SET_SIM_STATE:
-    setSimState_4DoyfzVWrL7ZTU2c84qGl(S, (const mxArray *) data);
+    setSimState_UxOvoSHoDqYMTVOX24wWpF(S, (const mxArray *) data);
     break;
 
    default:
     /* Unhandled method */
     /*
        sf_mex_error_message("Stateflow Internal Error:\n"
-       "Error calling method dispatcher for module: 4DoyfzVWrL7ZTU2c84qGl.\n"
+       "Error calling method dispatcher for module: UxOvoSHoDqYMTVOX24wWpF.\n"
        "Can't handle method %d.\n", method);
      */
     break;
   }
 }
 
-mxArray *cgxe_4DoyfzVWrL7ZTU2c84qGl_BuildInfoUpdate(void)
+mxArray *cgxe_UxOvoSHoDqYMTVOX24wWpF_BuildInfoUpdate(void)
 {
   mxArray * mxBIArgs;
   mxArray * elem_1;
@@ -2364,13 +2564,13 @@ mxArray *cgxe_4DoyfzVWrL7ZTU2c84qGl_BuildInfoUpdate(void)
   return mxBIArgs;
 }
 
-mxArray *cgxe_4DoyfzVWrL7ZTU2c84qGl_fallback_info(void)
+mxArray *cgxe_UxOvoSHoDqYMTVOX24wWpF_fallback_info(void)
 {
   const char* fallbackInfoFields[] = { "fallbackType", "incompatiableSymbol" };
 
   mxArray* fallbackInfoStruct = mxCreateStructMatrix(1, 1, 2, fallbackInfoFields);
   mxArray* fallbackType = mxCreateString("incompatibleVar");
-  mxArray* incompatibleSymbol = mxCreateString("u_tmp0:  ");
+  mxArray* incompatibleSymbol = mxCreateString("u_tmp0:  u_tmp1:  u_tmp2:  ");
   mxSetFieldByNumber(fallbackInfoStruct, 0, 0, fallbackType);
   mxSetFieldByNumber(fallbackInfoStruct, 0, 1, incompatibleSymbol);
   return fallbackInfoStruct;
